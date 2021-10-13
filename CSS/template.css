@@ -1,0 +1,102 @@
+@import url(//fonts.googleapis.com/earlyaccess/jejumyeongjo.css);
+
+@font-face {
+    font-family: '국립박물관문화재단클래식B';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/국립박물관문화재단클래식B.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'IM_Hyemin-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2106@1.1/IM_Hyemin-Regular.woff2') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'KOTRA_SONGEULSSI';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10-21@1.0/KOTRA_SONGEULSSI.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+.typing-text{
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 18px;
+    height: 32px;
+    font-family: 'Jeju Myeongjo', serif;
+    padding-left:10px;
+    padding-right:10px;
+    line-height:25px;
+}
+
+
+#container{
+    width: 56.25vw;
+    height: 100vw;
+}
+
+.mimage {
+    border: 3px solid black;
+    width:80%;
+    text-align:center;
+    display: block;
+    margin-left:auto;
+    margin-right:auto;
+    position:relative;
+}
+
+.scroll_box {
+    overflow-y:scroll;
+    overflow-x:hidden;
+    height:500px;
+    scrollbar-width:none;
+    -ms-overflow-style:none;
+}
+
+.select_button {
+    width:100%;
+    height:50px;
+}
+
+.select_scroll_box {
+    overflow-y:scroll;
+    overflow-x:hidden;
+    height:130px;
+    width:100%;
+}
+
+.scroll_box::-webkit-scrollbar
+{
+    display:none;
+}
+.location {
+    text-align:center;
+    font-family: '국립박물관문화재단클래식B';
+}
+
+body{
+    animation: fadein 2000ms ease-out;
+    -moz-animation: fadein 2000ms ease-out; /* Firefox */
+    -webkit-animation: fadein 2000ms ease-out; /* Safari and  Chrome */
+    -o-animation: fadein 2000ms ease-out; /* Opera */
+}
+@keyframes fadein {
+    from {opacity:0;}
+    to {opacity:1;}
+}
+@-moz-keyframes fadein { /* Firefox */
+    from {opacity:0;}
+    to {opacity:1;}
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {opacity:0;}
+    to {opacity:1;}
+}
+@-o-keyframes fadein { /* Opera */
+    from {opacity:0;}
+    to {opacity: 1;}
+}
