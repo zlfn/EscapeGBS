@@ -22,16 +22,7 @@
 }
 
 
-.typing-text{
-    display: table-cell;
-    vertical-align: middle;
-    font-size: 18px;
-    height: 32px;
-    font-family: 'Jeju Myeongjo', serif;
-    padding-left:10px;
-    padding-right:10px;
-    line-height:25px;
-}
+
 
 
 #container{
@@ -39,51 +30,195 @@
     height: 100vw;
 }
 
-.mimage {
-    border: 3px solid black;
-    width:80%;
-    text-align:center;
-    display: block;
-    margin-left:auto;
-    margin-right:auto;
-    position:relative;
-}
 
-.scroll_box {
-    overflow-y:scroll;
-    overflow-x:hidden;
-    height:500px;
-    scrollbar-width:none;
-    -ms-overflow-style:none;
-}
-
-.select_button {
-    width:100%;
-    height:50px;
-}
-
-.select_scroll_box {
-    overflow-y:scroll;
-    overflow-x:hidden;
-    height:130px;
-    width:100%;
-}
-
-.scroll_box::-webkit-scrollbar
+@media(max-aspect-ratio:1/1)
 {
-    display:none;
-}
-.location {
-    text-align:center;
-    font-family: '국립박물관문화재단클래식B';
+
+    .scroll_box {
+        overflow-y:hidden;
+        overflow-x:hidden;
+        scrollbar-width:none;
+        -ms-overflow-style:none;
+        position:relative;
+        top:0px;
+        margin-bottom:200px;
+    }
+    .scroll_box::-webkit-scrollbar
+    {
+        display:none;
+    }
+    .mimage {
+        width:80%;
+        text-align:center;
+        display: block;
+        margin-left:auto;
+        margin-right:auto;
+        position:relative;
+        margin-bottom:5px;
+    }
+    .typing-text{
+        display: table-cell;
+        vertical-align: middle;
+        font-size: 18px;
+        -ms-scrollbar-track-color: white;
+        font-family: 'Jeju Myeongjo', serif;
+        padding-left:10px;
+        padding-right:10px;
+        line-height:25px;
+    }
+    .location {
+        text-align:center;
+        height:10%;
+        position:sticky;
+        top:0;
+        font-family: '국립박물관문화재단클래식B';
+        background-color:white;
+        z-index:1;
+    }
+    body{
+        margin:0;
+        padding:0;
+        overflow-y:scroll;
+        scrollbar-width:none;
+        -ms-overflow-style:none;
+        animation: fadein 2000ms ease-out;
+        -moz-animation: fadein 2000ms ease-out; /* Firefox */
+        -webkit-animation: fadein 2000ms ease-out; /* Safari and  Chrome */
+        -o-animation: fadein 2000ms ease-out; /* Opera */
+    }
+    .body::-webkit-scrollbar
+    {
+        display:none;
+        width:0 !important
+    }
+    .bottom {
+        position:fixed;
+        overflow:hidden;
+        bottom:0;
+        width:100%;
+        margin-top:200px;
+        background-color: white;
+        height:150px;
+    }
+    .select_button {
+        background-color:white;
+        width:100%;
+        height:50px;
+        padding-bottom:1px;
+        top:0px;
+        border-top:0px;
+        border-bottom:1px solid black;
+    }
+
+    .select_scroll_box {
+        position:relative;
+        overflow-y:scroll;
+        overflow-x:hidden;
+        scrollbar-width:none;
+        -ms-overflow-style:none;
+        height:96%;
+        width:100%;
+        margin-right:auto;
+        margin-left:auto;
+        bottom:0;
+    }
 }
 
-body{
-    animation: fadein 2000ms ease-out;
-    -moz-animation: fadein 2000ms ease-out; /* Firefox */
-    -webkit-animation: fadein 2000ms ease-out; /* Safari and  Chrome */
-    -o-animation: fadein 2000ms ease-out; /* Opera */
+@media(min-aspect-ratio:1/1)
+{
+
+    .scroll_box {
+        overflow-y:hidden;
+        overflow-x:hidden;
+    }
+    .mimage_box {
+        width:50%;
+        height:100%;
+        overflow:hidden;
+        float:left;
+        margin-top:70px;
+        margin-bottom:20px;
+        padding-left:5px;
+        z-index:2;
+    }
+    .mimage {
+        position:relative;
+        margin:auto;
+        width:100%;
+        height:auto;
+        object-fit:none;
+        display:inline;
+        transform: translate(50, 50);
+        z-index:2;
+    }
+    .typing-text{
+        overflow-y:scroll;
+        overflow-x:hidden;
+        font-size: 18px;
+        width:49%;
+        font-family: 'Jeju Myeongjo', serif;
+        line-height:25px;
+        float:left;
+        position:absolute;
+        margin-left:50%;
+        padding-left:10px;
+        bottom:200px;
+        top:100px;
+        z-index:2;
+    }
+    .location {
+        text-align:center;
+        height:30px;
+        position:relative;
+        top:10%;
+        font-family: '국립박물관문화재단클래식B';
+        background-color:white;
+        z-index:1;
+    }
+    body{
+        margin:0;
+        padding:0;
+        overflow-y: hidden;
+        overflow-x: hidden;
+        animation: fadein 2000ms ease-out;
+        -moz-animation: fadein 2000ms ease-out; /* Firefox */
+        -webkit-animation: fadein 2000ms ease-out; /* Safari and  Chrome */
+        -o-animation: fadein 2000ms ease-out; /* Opera */
+    }
+    .bottom {
+        position:fixed;
+        overflow:hidden;
+        width:100%;
+        bottom:0;
+        background-color: white;
+        height:200px;
+        z-index:2;
+    }
+    .select_button {
+        background-color:white;
+        width:100%;
+        height:50px;
+        padding-bottom:1px;
+        top:0px;
+        border-top:0px;
+        border-bottom:1px solid black;
+    }
+
+    .select_scroll_box {
+        bottom:0;
+        position:relative;
+        overflow-y:scroll;
+        overflow-x:hidden;
+        scrollbar-width:none;
+        -ms-overflow-style:none;
+        height:96%;
+        width:100%;
+    }
 }
+
+
+
+
 @keyframes fadein {
     from {opacity:0;}
     to {opacity:1;}

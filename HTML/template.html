@@ -2,25 +2,43 @@
 <head>
     <link rel="stylesheet" type="text/css" href="/css">
     <meta charset="utf-8">
+    <link rel="stylesheet" href="/path/to/jquery.mCustomScrollbar.css" />
     <meta http-equiv="page-enter" content="blendTrans(duration=0.3)">
     <meta http-equiv="page-exit" content="blendTrans(duration=0.3)">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-    <h1 class="location">#기숙사</h1>
+
+<div class="location">
     <hr>
+    <h1>#기숙사</h1>
+    <hr>
+</div>
+
     <div class="scroll_box">
-    <img class="mimage" src="https://ww.namu.la/s/5e62b27e4490f3e59183b61ad8bdf55b761f2108cc5cb992043424d8ce0642123b9bee4bb3ba53231dac8cae8152597511eb71e045f53794ad8e105eb6c015dc433e07f997440a2b8ea99471fc76ee723b84d423fb378790fd2e2c41a6adb4e4"/><br><br>
-    <p class="typing-text"></p></div>
+        <div class="mimage_box">
+    <img class="mimage" src="https://ww.namu.la/s/5e62b27e4490f3e59183b61ad8bdf55b761f2108cc5cb992043424d8ce0642123b9bee4bb3ba53231dac8cae8152597511eb71e045f53794ad8e105eb6c015dc433e07f997440a2b8ea99471fc76ee723b84d423fb378790fd2e2c41a6adb4e4"/>
+            </div>
+    <p class="typing-text"></p>
+    </div>
+<div class="bottom">
     <hr>
     <div class="select_scroll_box">
         <form method="post">
-            <input class="select_button" type="submit" value="1" name="selection">
-            <input class="select_button" type="submit" value="2" name="selection">
-            <input class="select_button" type="submit" value="3" name="selection">
+            <button class="select_button" type="submit" value="1 2" name="selection">나태양을 죽인다.</button>
+            <button class="select_button" type="submit" value="1 2" name="selection">나태양을 잔인하게 죽인다.</button>
+            <button class="select_button" type="submit" value="1 2" name="selection">나태양을 무자비하게 죽인다.</button>
+            <button class="select_button" type="submit" value="1 0" name="selection">-</button>
+            <button class="select_button" type="submit" value="1 0" name="selection">-</button>
+            <button class="select_button" type="submit" value="1 0" name="selection">-</button>
         </form>
     </div>
+</div>
+
 
 
     <script src="/js"></script>
     <link rel="stylesheet" type="text/css" href="/css">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="/path/to/jquery.mCustomScrollbar.concat.min.js"></script>
 </body>

@@ -1,11 +1,13 @@
-const content = "나태양죽나태양죽어나태양죽어나태양죽어나태양죽어나태양죽어나태양죽어나태양죽어나태양죽어나태양죽어나태양죽어나태양죽어나태양죽어나태양죽어나태양죽어나태양죽어나태양죽어나태양죽어나태양죽어나태양죽어나태양죽어나태양죽어나태양죽어나태양죽어나태양죽어나태양죽어나태양죽어나태양죽어나태양죽어나태양죽어나태양죽어나태양죽어나태양죽어"
+const content = "어나태양죽나태양죽어나태양죽어나태양죽어나태양죽어나태양죽어나태양죽어나태양죽어나태양죽어나태양죽어나태양죽어나태양죽어나태양죽어나태양죽어나태양죽어나태양죽어\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n나태양죽어나태양죽어나태양죽어나태양죽어나태양죽어나태양죽어나태양죽어나태양죽어나태양죽어나태양죽어나태양죽어나태양죽어나태양죽어나태양죽어나태양죽어나태양죽어나태양죽어"
 const text = document.querySelector(".typing-text");
 let index = 0;
 
 window.history.forward();
-function noBack(){window.history.forward();}
+function noBack(){window.history.forward();} //뒤로가기 방지
 
 function checkRow(event) { var event_test = event; alert(event_test); }
+
+
 
 function typing(){
     let txt = content[index++];
@@ -14,12 +16,14 @@ function typing(){
         else if(txt=="\a") text.innerHTML +="&nbsp&nbsp";
         else text.innerHTML += txt;
     }
-}
+} //타이핑 텍스트
+
 
 setInterval(typing, 13)
 
 
-jQuery(function($) {
+jQuery(
+    function($) {
     $("body").css("display", "none");
     $("body").fadeIn(2000);
     $("a.transition").click(function(event){
@@ -29,8 +33,7 @@ jQuery(function($) {
     });
     function redirectPage() {
         window.location = linkLocation;
-    }
-});
+    }})
 
 
 
