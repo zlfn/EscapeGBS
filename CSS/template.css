@@ -24,7 +24,6 @@
 
 
 
-
 #container{
     width: 56.25vw;
     height: 100vw;
@@ -75,22 +74,7 @@
         background-color:white;
         z-index:1;
     }
-    body{
-        margin:0;
-        padding:0;
-        overflow-y:scroll;
-        scrollbar-width:none;
-        -ms-overflow-style:none;
-        animation: fadein 2000ms ease-out;
-        -moz-animation: fadein 2000ms ease-out; /* Firefox */
-        -webkit-animation: fadein 2000ms ease-out; /* Safari and  Chrome */
-        -o-animation: fadein 2000ms ease-out; /* Opera */
-    }
-    .body::-webkit-scrollbar
-    {
-        display:none;
-        width:0 !important
-    }
+
     .bottom {
         position:fixed;
         overflow:hidden;
@@ -99,29 +83,9 @@
         margin-top:200px;
         background-color: white;
         height:150px;
-    }
-    .select_button {
-        background-color:white;
-        width:100%;
-        height:50px;
-        padding-bottom:1px;
-        top:0px;
-        border-top:0px;
-        border-bottom:1px solid black;
+        z-index:2;
     }
 
-    .select_scroll_box {
-        position:relative;
-        overflow-y:scroll;
-        overflow-x:hidden;
-        scrollbar-width:none;
-        -ms-overflow-style:none;
-        height:96%;
-        width:100%;
-        margin-right:auto;
-        margin-left:auto;
-        bottom:0;
-    }
 }
 
 @media(min-aspect-ratio:1/1)
@@ -175,16 +139,7 @@
         background-color:white;
         z-index:1;
     }
-    body{
-        margin:0;
-        padding:0;
-        overflow-y: hidden;
-        overflow-x: hidden;
-        animation: fadein 2000ms ease-out;
-        -moz-animation: fadein 2000ms ease-out; /* Firefox */
-        -webkit-animation: fadein 2000ms ease-out; /* Safari and  Chrome */
-        -o-animation: fadein 2000ms ease-out; /* Opera */
-    }
+
     .bottom {
         position:fixed;
         overflow:hidden;
@@ -194,26 +149,46 @@
         height:200px;
         z-index:2;
     }
-    .select_button {
-        background-color:white;
-        width:100%;
-        height:50px;
-        padding-bottom:1px;
-        top:0px;
-        border-top:0px;
-        border-bottom:1px solid black;
-    }
+}
 
-    .select_scroll_box {
-        bottom:0;
-        position:relative;
-        overflow-y:scroll;
-        overflow-x:hidden;
-        scrollbar-width:none;
-        -ms-overflow-style:none;
-        height:96%;
-        width:100%;
-    }
+body{
+    margin:0;
+    padding:0;
+    overflow-y:hidden;
+    scrollbar-width:none;
+    -ms-overflow-style:none;
+    animation: fadein 2000ms ease-out;
+    -moz-animation: fadein 2000ms ease-out; /* Firefox */
+    -webkit-animation: fadein 2000ms ease-out; /* Safari and  Chrome */
+    -o-animation: fadein 2000ms ease-out; /* Opera */
+}
+
+.select_button {
+    font-family: 'Jeju Myeongjo',serif;
+    font-size:15px;
+    background-color:white;
+    width:100%;
+    height:50px;
+    padding-bottom:3px;
+    border-top:0px;
+    border-bottom:1px solid black;
+    border-top:1px solid black;
+    transform: translate3d(0, 0, 0);
+    -webkit-text-fill-color:black;
+}
+
+.select_scroll_box {
+    position:relative;
+    overflow-y:scroll;
+    overflow-x:hidden;
+    scrollbar-width:none;
+    -ms-overflow-style:none;
+    height:96%;
+    width:100%;
+    bottom:0;
+    z-index:1;
+    margin-left:auto;
+    margin-right:auto;
 }
 
 

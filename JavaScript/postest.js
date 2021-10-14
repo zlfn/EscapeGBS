@@ -7,6 +7,12 @@ function noBack(){window.history.forward();} //뒤로가기 방지
 
 function checkRow(event) { var event_test = event; alert(event_test); }
 
+history.pushState(null, null, location.href);
+window.onpopstate = function(event) {
+    history.go(1);
+};
+
+
 
 
 function typing(){

@@ -2,12 +2,14 @@
 
 #[macro_use] extern crate rocket;
 
+use core::time;
 use std::collections::HashMap;
+use std::thread;
 use rocket::http::{Cookie, Cookies};
 use EscapeGBS::*;
 use rocket::response::content;
 use EscapeGBS::DataManager::SessionIO::{ClearSession, DeleteAllSessions, GenerateSession, ReadSession, WriteSession};
-use EscapeGBS::DataManager::FileIO::{GameState, ReadHTMLFile};
+use EscapeGBS::DataManager::FileIO::{BuildHTML, GameState, ReadHTMLFile};
 
 static mut sessions:  Option<HashMap<String, String>> = None;
 
@@ -15,7 +17,7 @@ static mut sessions:  Option<HashMap<String, String>> = None;
 fn index(mut cookies:Cookies) -> content::Html<String> {
     cookies.add(Cookie::new("session",GenerateSession(600).unwrap().to_string()));
     ClearSession();
-    return DataManager::FileIO::ReadHTMLFile("HTML/template.html").unwrap();
+    return DataManager::FileIO::BuildHTML(&1).unwrap();
 }
 
 #[post("/",data="<selection>")]
@@ -57,7 +59,7 @@ fn select(goto:Vec<i32>, session:u32, mut state: EscapeGBS::DataManager::GameSta
                 {
                     state.page = 1;
                     WriteSession(session, state);
-                    return ReadHTMLFile("HTML/template.html").unwrap();
+                    return BuildHTML(&1).unwrap();
                 }
                 else
                 {
@@ -71,7 +73,7 @@ fn select(goto:Vec<i32>, session:u32, mut state: EscapeGBS::DataManager::GameSta
                 {
                     state.page = 2;
                     WriteSession(session, state);
-                    return ReadHTMLFile("HTML/postest.html").unwrap();
+                    return BuildHTML(&2).unwrap();
                 }
                 else
                 {
@@ -82,9 +84,9 @@ fn select(goto:Vec<i32>, session:u32, mut state: EscapeGBS::DataManager::GameSta
             {
                 if (state.page == goto[0]&&(goto[0]==2||goto[0]==3))
                 {
-                    state.page=3;
-                    WriteSession(session,state);
-                    return ReadHTMLFile("HTML/sectest.html").unwrap();
+                    state.page = 3;
+                    WriteSession(session, state);
+                    return BuildHTML(&3).unwrap();
                 }
                 else {
                     return ReadHTMLFile("HTML/Error.html").unwrap();
