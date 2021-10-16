@@ -1,0 +1,45 @@
+{
+  "comment": "`세션이 만료되었습니다.@창을 닫고 다시 시작해주세요.",
+  "location": "#?",
+  "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0DNHcDQc5STklDFujhq2sHyAx_8soNeqXGg&usqp=CAU",
+  "conditional": false,
+  "choices":
+  [
+    {
+      "text":"-",
+      "link":"-3 0",
+      "req": 0,
+      "number": 0
+    },
+    {
+      "text":"-",
+      "link":"-3 0",
+      "req": 0,
+      "number": 0
+    },
+    {
+      "text":"-",
+      "link":"-3 0",
+      "req": 0,
+      "number": 0
+    },
+    {
+      "text":"-",
+      "link":"-3 0",
+      "req": 0,
+      "number": 0
+    },
+    {
+      "text":"-",
+      "link":"-3 0",
+      "req": 0,
+      "number": 0
+    },
+    {
+      "text":"-",
+      "link":"-3 0",
+      "req": 0,
+      "number": 0
+    }
+  ]
+}

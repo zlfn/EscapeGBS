@@ -7,8 +7,10 @@ pub mod SessionIO;
 
 pub struct GameState
 {
-    pub page:i32
-    //TODO
+    pub page:i32,
+
+    pub condition:Vec::<bool>,
+    pub gadget:Vec::<bool>
 }
 
 

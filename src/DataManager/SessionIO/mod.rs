@@ -28,9 +28,11 @@ pub fn GenerateSession(tt: i64) -> Result<u32,io::Error>
 
     let mut state = GameState
 {
-    page:1
+    page:1,
+    condition: vec![false;1],
+    gadget: vec![false;1]
 };
-    let s = format!("{}\n{}\n",now+tt,state.page); //TODO
+    let s = format!("{}\n{}\n{}\n{}\n",now+tt,state.page,state.condition[0],state.gadget[0]); //TODO
     file.write(s.as_bytes());
     println!("session {} created",key);
     return Ok(key);
@@ -90,8 +92,9 @@ pub fn DeleteAllSessions()
     }
 }
 
+
 ///세션의 내용을 읽어 GameState로 반환합니다.
-///만약 세션 만료시간이 얼마 남지 않았다면 세션을 연장합니다.
+///세션의 만료시간은 읽지 않습니다.
 ///
 /// # Example
 /// ```
@@ -104,28 +107,32 @@ pub fn ReadSession(session:u32) ->Result<GameState,io::Error>
     let mut filedata = File::open(file_name)?;
     let mut reader = BufReader::new(filedata);
 
-    let mut state: GameState = GameState{page:0};
+    let mut state: GameState = GameState{page:0,condition:vec![false;1],gadget:vec![false;1]};
 
     let mut i = 0;
     for text in reader.lines()
     {
-        if i == 0
-        {
-            let mut input = text.unwrap();
-            if GetUnixTime()+900 >= input.parse::<i64>().unwrap()
-            {
-                //TODO: 세션 연장
-            }
-        }
+        if i == 0 {}
         else if i == 1
         {
             let mut input = text.unwrap();
             let v = input.parse::<i32>().unwrap();
             state.page = v;
         }
+        else if i ==2
+        {
+            let mut input = text.unwrap();
+            let v = input.parse::<bool>().unwrap();
+            state.condition[0]=v;
+        }
+        else if i ==3
+        {
+            let mut input = text.unwrap();
+            let v = input.parse::<bool>().unwrap();
+            state.gadget[0]=v;
+        }
 
         //TODO
-
 
         i = i+1;
     }
@@ -133,28 +140,20 @@ pub fn ReadSession(session:u32) ->Result<GameState,io::Error>
     return Ok(state);
 }
 
-///GameState를 받아 세션에 작성합니다.
-///세션 만료 시간은 변경되지 않습니다.
+///GameState를 받아 세션에 작성하며, 세션을 연장합니다.
 ///
 /// # Example
 /// ```
 /// DataManager::SessionIO::WriteSession(342398,state);
 /// ```
 ///
-pub fn WriteSession(session:u32, state:GameState) -> Result<i32,io::Error>
+pub fn WriteSession(session:u32, state:&GameState) -> Result<i32,io::Error>
 {
     let file_name = format!("DataBase/{}", session);
-    let mut filedata = File::open(&file_name).unwrap();
-    let mut reader = BufReader::new(&filedata);
-
-    let mut s : String = String::new();
-    reader.read_line(&mut s)?;
-    let mut input = s.replace("\n","");
-    let tt = input.parse::<i64>().unwrap();
+    let tt = GetUnixTime()+600;
 
     let mut mofile = fs::OpenOptions::new().write(true).truncate(true).open(file_name).unwrap();
-    println!("{}\n{}\n",tt,state.page);
-    mofile.write(String::from(format!("{}\n{}\n",tt,state.page)).as_bytes()); //TODO
+    mofile.write(String::from(format!("{}\n{}\n{}\n{}\n",tt,state.page,state.condition[0],state.gadget[0])).as_bytes()); //TODO
 
     return Ok(0);
 }
