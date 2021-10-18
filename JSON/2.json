@@ -3,43 +3,61 @@
   "location": "#나태양죽어",
   "image": "https://mblogthumb-phinf.pstatic.net/20140616_257/staryoorang_1402886433741eOkj8_JPEG/%C5%C2%BE%E7%C0%C7_%C1%D7%C0%BD.jpg?type=w2",
   "conditional": true,
+  "getcon": [1],
+  "getgad": [],
+  "lostcon": [],
+  "lostgad": [],
+  "revcon": [],
+  "revgad": [],
   "choices":
   [
     {
       "text":"돌아가기",
-      "link":"2 1",
-      "req": 1,
-      "number": 0
+      "link":"2 1 0",
+      "conreq": true,
+      "gadreq": false,
+      "condition": [0,1],
+      "gadget": []
     },
     {
       "text":"테스트페이지",
-      "link":"2 3",
-      "req": 0,
-      "number": 0
+      "link":"2 3 1",
+      "conreq": false,
+      "gadreq": false,
+      "condition": [],
+      "gadget": []
     },
     {
       "text":"-",
-      "link":"2 0",
-      "req": 0,
-      "number": 0
+      "link":"2 0 2",
+      "conreq": false,
+      "gadreq": false,
+      "condition": [],
+      "gadget": []
     },
     {
       "text":"-",
-      "link":"2 0",
-      "req": 0,
-      "number": 0
+      "link":"2 0 3",
+      "conreq": false,
+      "gadreq": false,
+      "condition": [],
+      "gadget": []
     },
     {
       "text":"-",
-      "link":"2 0",
-      "req": 0,
-      "number": 0
+      "link":"2 0 4",
+      "conreq": false,
+      "gadreq": false,
+      "condition": [],
+      "gadget": []
     },
     {
       "text":"-",
-      "link":"2 0",
-      "req": 0,
-      "number": 0
+      "link":"2 0 5",
+      "conreq": false,
+      "gadreq": false,
+      "condition": [],
+      "gadget": []
     }
   ]
 }

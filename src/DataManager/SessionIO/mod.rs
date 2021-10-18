@@ -29,10 +29,56 @@ pub fn GenerateSession(tt: i64) -> Result<u32,io::Error>
     let mut state = GameState
 {
     page:1,
-    condition: vec![false;1],
-    gadget: vec![false;1]
+    condition: vec![false;20],
+    gadget: vec![false;20]
 };
-    let s = format!("{}\n{}\n{}\n{}\n",now+tt,state.page,state.condition[0],state.gadget[0]); //TODO
+    let s = format!("{}\n{}\n\
+                    {}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n\
+                    {}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n",
+                    now+tt,
+                    state.page,
+                    state.condition[0],
+                    state.condition[1],
+                    state.condition[2],
+                    state.condition[3],
+                    state.condition[4],
+                    state.condition[5],
+                    state.condition[6],
+                    state.condition[7],
+                    state.condition[8],
+                    state.condition[9],
+                    state.condition[10],
+                    state.condition[11],
+                    state.condition[12],
+                    state.condition[13],
+                    state.condition[14],
+                    state.condition[15],
+                    state.condition[16],
+                    state.condition[17],
+                    state.condition[18],
+                    state.condition[19],
+                    state.gadget[0],
+                    state.gadget[1],
+                    state.gadget[2],
+                    state.gadget[3],
+                    state.gadget[4],
+                    state.gadget[5],
+                    state.gadget[6],
+                    state.gadget[7],
+                    state.gadget[8],
+                    state.gadget[9],
+                    state.gadget[10],
+                    state.gadget[11],
+                    state.gadget[12],
+                    state.gadget[13],
+                    state.gadget[14],
+                    state.gadget[15],
+                    state.gadget[16],
+                    state.gadget[17],
+                    state.gadget[18],
+                    state.gadget[19],
+
+    ); //TODO
     file.write(s.as_bytes());
     println!("session {} created",key);
     return Ok(key);
@@ -107,7 +153,7 @@ pub fn ReadSession(session:u32) ->Result<GameState,io::Error>
     let mut filedata = File::open(file_name)?;
     let mut reader = BufReader::new(filedata);
 
-    let mut state: GameState = GameState{page:0,condition:vec![false;1],gadget:vec![false;1]};
+    let mut state: GameState = GameState{page:0,condition:vec![false;20],gadget:vec![false;20]};
 
     let mut i = 0;
     for text in reader.lines()
@@ -119,17 +165,17 @@ pub fn ReadSession(session:u32) ->Result<GameState,io::Error>
             let v = input.parse::<i32>().unwrap();
             state.page = v;
         }
-        else if i ==2
+        else if 2<=i&&i<=21
         {
             let mut input = text.unwrap();
             let v = input.parse::<bool>().unwrap();
-            state.condition[0]=v;
+            state.condition[i-2]=v;
         }
-        else if i ==3
+        else if 22<=i&&i<=41
         {
             let mut input = text.unwrap();
             let v = input.parse::<bool>().unwrap();
-            state.gadget[0]=v;
+            state.gadget[i-22]=v;
         }
 
         //TODO
@@ -153,7 +199,51 @@ pub fn WriteSession(session:u32, state:&GameState) -> Result<i32,io::Error>
     let tt = GetUnixTime()+600;
 
     let mut mofile = fs::OpenOptions::new().write(true).truncate(true).open(file_name).unwrap();
-    mofile.write(String::from(format!("{}\n{}\n{}\n{}\n",tt,state.page,state.condition[0],state.gadget[0])).as_bytes()); //TODO
+    mofile.write(String::from(format!("{}\n{}\n\
+                    {}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n\
+                    {}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n",
+                    tt,
+                    state.page,
+                    state.condition[0],
+                    state.condition[1],
+                    state.condition[2],
+                    state.condition[3],
+                    state.condition[4],
+                    state.condition[5],
+                    state.condition[6],
+                    state.condition[7],
+                    state.condition[8],
+                    state.condition[9],
+                    state.condition[10],
+                    state.condition[11],
+                    state.condition[12],
+                    state.condition[13],
+                    state.condition[14],
+                    state.condition[15],
+                    state.condition[16],
+                    state.condition[17],
+                    state.condition[18],
+                    state.condition[19],
+                    state.gadget[0],
+                    state.gadget[1],
+                    state.gadget[2],
+                    state.gadget[3],
+                    state.gadget[4],
+                    state.gadget[5],
+                    state.gadget[6],
+                    state.gadget[7],
+                    state.gadget[8],
+                    state.gadget[9],
+                    state.gadget[10],
+                    state.gadget[11],
+                    state.gadget[12],
+                    state.gadget[13],
+                    state.gadget[14],
+                    state.gadget[15],
+                    state.gadget[16],
+                    state.gadget[17],
+                    state.gadget[18],
+                    state.gadget[19])).as_bytes()); //TODO
 
     return Ok(0);
 }

@@ -10,13 +10,18 @@ use rocket::http::{Cookie, Cookies};
 use EscapeGBS::*;
 use rocket::response::content;
 use EscapeGBS::DataManager::SessionIO::{ClearSession, DeleteAllSessions, GenerateSession, ReadSession, WriteSession};
-use EscapeGBS::DataManager::FileIO::{BuildHTML, BuildHTML_nostate, ReadHTMLFile};
+use EscapeGBS::DataManager::FileIO::{ReadFile, BuildHTML, BuildHTML_nostate, ReadHTMLFile, JsonFormat, GetState};
 use EscapeGBS::DataManager::GameState;
 
 static mut sessions:  Option<HashMap<String, String>> = None;
 
 #[get("/")]
-fn index(mut cookies:Cookies) -> content::Html<String> {
+fn index() -> content::Html<String> {
+    return ReadHTMLFile("HTML/Main.html").unwrap();
+}
+
+#[get("/game")]
+fn game(mut cookies:Cookies) -> content::Html<String> {
     let session = cookies.get("session");
     if let Some(T) = session
     {
@@ -26,11 +31,18 @@ fn index(mut cookies:Cookies) -> content::Html<String> {
 
     cookies.add(Cookie::new("session",GenerateSession(600).unwrap().to_string()));
     ClearSession();
-    return DataManager::FileIO::BuildHTML_nostate(1).unwrap();
+    let session = cookies.get("session");
+    if let Some(T) = session{} else{return BuildHTML_nostate(-3).unwrap();}
+    let session = session.unwrap().value().parse::<u32>();
+    if let Err(E) = session {return BuildHTML_nostate(-3).unwrap();}
+    let session = session.unwrap();
+
+    let mut state = ReadSession(session);
+    return DataManager::FileIO::BuildHTML(0,1,&state.unwrap()).unwrap();
 }
 
-#[post("/",data="<selection>")]
-fn index_post(selection:String, mut cookies:Cookies) -> content::Html<String> {
+#[post("/game",data="<selection>")]
+fn game_post(selection:String, mut cookies:Cookies) -> content::Html<String> {
     let session = cookies.get("session");
     if let Some(T) = session{} else{return BuildHTML_nostate(-3).unwrap();}
     let session = session.unwrap().value().parse::<u32>();
@@ -58,6 +70,42 @@ fn index_post(selection:String, mut cookies:Cookies) -> content::Html<String> {
 
 }
 
+fn check(goto:Vec<i32>, session: u32, mut state: &mut GameState) -> content::Html<String>
+{
+    let mut json_path = format!("JSON/{}.json", goto[0]);
+    let mut file = &ReadFile(&json_path).unwrap()[..];
+    let mut data: JsonFormat = serde_json::from_str(file).unwrap();
+
+
+    if goto[0]!=state.page
+    {
+        return BuildHTML_nostate(-3).unwrap();
+    }
+    if data.choices[usize::try_from(goto[2]).unwrap()].conreq==true
+    {
+        for i in data.choices[usize::try_from(goto[2]).unwrap()].condition.iter()
+        {
+            if (!state.condition[*i])
+            {
+                return BuildHTML_nostate(-3).unwrap();
+            }
+        }
+    }
+    if data.choices[usize::try_from(goto[2]).unwrap()].gadreq==true
+    {
+        for i in data.choices[usize::try_from(goto[2]).unwrap()].gadget.iter()
+        {
+            if (!state.gadget[*i])
+            {
+                return BuildHTML_nostate(-3).unwrap();
+            }
+        }
+    }
+    GetState(goto[1],state);
+    WriteSession(session,state);
+    return BuildHTML(i32::try_from(goto[0]).unwrap(),i32::try_from(goto[1]).unwrap(),state).unwrap();
+}
+
 fn select(goto:Vec<i32>,session:u32, mut state: GameState) -> content::Html<String>
 {
     if goto[1]==0 {return select(vec![goto[0],goto[0]],session,state);}
@@ -82,83 +130,15 @@ fn select(goto:Vec<i32>,session:u32, mut state: GameState) -> content::Html<Stri
             }
         1=>
             {
-                if goto[0]==state.page
-                {
-                    match goto[1]
-                    {
-                        1=>
-                            {
-                                state.page = 1;
-                                WriteSession(session,&state);
-                                return BuildHTML(1,1,&state).unwrap()
-                            }
-                        2=>
-                            {
-                                state.page = 2;
-                                WriteSession(session,&state);
-                                return BuildHTML(1,2,&state).unwrap()
-                            }
-                        _=>return BuildHTML(1,-3,&state).unwrap()
-                    }
-                }
-                else {return BuildHTML(1,-2,&state).unwrap()}
+                return check(goto,session, &mut state);
             }
         2=>
             {
-                if goto[0]==state.page
-                {
-                    match goto[1]
-                    {
-                        1=>
-                            {
-                                if state.condition[0]
-                                {
-                                    state.page = 1;
-                                    WriteSession(session,&state);
-                                    return BuildHTML(2,1,&state).unwrap()
-                                }
-                                else {return BuildHTML_nostate(-3).unwrap()}
-                            }
-                        2=>
-                            {
-                                state.page = 2;
-                                WriteSession(session,&state);
-                                return BuildHTML(2,2,&state).unwrap()
-                            }
-                        3=>
-                            {
-                                state.condition[0] = true;
-                                state.page = 3;
-                                WriteSession(session,&state);
-                                return BuildHTML(2,3,&state).unwrap()
-                            }
-                        _=>return BuildHTML(2,-3,&state).unwrap()
-                    }
-                }
-                else {return BuildHTML(2,-3,&state).unwrap()}
+                return check(goto, session, &mut state);
             }
         3=>
             {
-                if goto[0]==state.page
-                {
-                    match goto[1]
-                    {
-                        2=>
-                            {
-                                state.page=2;
-                                WriteSession(session,&state);
-                                return BuildHTML(3,2,&state).unwrap()
-                            }
-                        3=>
-                            {
-                                state.page = 3;
-                                WriteSession(session,&state);
-                                return BuildHTML(3,3,&state).unwrap()
-                            }
-                        _=>return BuildHTML(3,-3,&state).unwrap()
-                    }
-                }
-                else {return BuildHTML(3,-3,&state).unwrap()}
+                return check(goto, session, &mut state);
             }
         _=>return BuildHTML_nostate(-3).unwrap()
     }}
@@ -169,6 +149,6 @@ fn select(goto:Vec<i32>,session:u32, mut state: GameState) -> content::Html<Stri
 
 fn main() {
     rocket::ignite().mount("/",
-                           routes![index, index_post])
+                           routes![index, game, game_post])
         .launch();
 }

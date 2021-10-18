@@ -1,33 +1,320 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE HTML>
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
     <style>
-        .title
-        {
-            text-align:center;
+        @import url(//fonts.googleapis.com/earlyaccess/jejumyeongjo.css);
+
+        @font-face {
+            font-family: '국립박물관문화재단클래식B';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/국립박물관문화재단클래식B.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
         }
-        .trivia
+
+        @font-face {
+            font-family: 'IM_Hyemin-Regular';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2106@1.1/IM_Hyemin-Regular.woff2') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'KOTRA_SONGEULSSI';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10-21@1.0/KOTRA_SONGEULSSI.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+
+
+
+        #container{
+            width: 56.25vw;
+            height: 100vw;
+        }
+
+
+        @media(max-aspect-ratio:1/1)
         {
-            position:fixed;
+
+            .scroll_box {
+                overflow-y:hidden;
+                overflow-x:hidden;
+                scrollbar-width:none;
+                -ms-overflow-style:none;
+                position:relative;
+                top:0px;
+                margin-bottom:200px;
+            }
+            .scroll_box::-webkit-scrollbar
+            {
+                display:none;
+            }
+            .mimage {
+                width:80%;
+                text-align:center;
+                display: block;
+                margin-left:auto;
+                margin-right:auto;
+                position:relative;
+                margin-bottom:5px;
+            }
+            .typing-text{
+                display: table-cell;
+                vertical-align: middle;
+                font-size: 18px;
+                -ms-scrollbar-track-color: white;
+                font-family: 'Jeju Myeongjo', serif;
+                padding-left:10px;
+                padding-right:10px;
+                line-height:25px;
+            }
+            .location {
+                text-align:center;
+                height:10%;
+                position:sticky;
+                top:0;
+                font-family: '국립박물관문화재단클래식B';
+                background-color:white;
+                z-index:1;
+            }
+
+            .bottom {
+                position:fixed;
+                text-align:center;
+                overflow:hidden;
+                bottom:0;
+                width:100%;
+                margin-top:200px;
+                background-color: white;
+                height 100px;
+                z-index:2;
+            }
+
+            .start_button {
+                width:50%;
+                position:relative;
+                margin-left:25%;
+            }
+
+        }
+
+        @media(min-aspect-ratio:1/1)
+        {
+
+            .scroll_box {
+                overflow-y:hidden;
+                overflow-x:hidden;
+            }
+            .mimage_box {
+                width:50%;
+                height:100%;
+                overflow:hidden;
+                float:left;
+                margin-top:70px;
+                margin-bottom:20px;
+                padding-left:5px;
+                z-index:2;
+            }
+            .mimage {
+                position:relative;
+                margin:auto;
+                width:100%;
+                height:auto;
+                object-fit:none;
+                display:inline;
+                transform: translate(50, 50);
+                z-index:2;
+            }
+            .typing-text{
+                font-size: 18px;
+                width:100%;
+                margin-top:5px;
+                font-family: 'Jeju Myeongjo', serif;
+                line-height:25px;
+                overflow-y:scroll;
+                overflow-x:hidden;
+                position:relative;
+            }
+            .comment-box{
+                float:left;
+                position:absolute;
+                margin-left:50%;
+                padding-left:10px;
+                bottom:200px;
+                top:100px;
+                z-index:2;
+            }
+            .location {
+                text-align:center;
+                height:30px;
+                position:relative;
+                top:10%;
+                font-family: '국립박물관문화재단클래식B';
+                background-color:white;
+                z-index:1;
+            }
+
+            .bottom {
+                position:fixed;
+                overflow:hidden;
+                width:100%;
+                bottom:0;
+                background-color: white;
+                height:100px;
+                z-index:2;
+                text-align:center;
+            }
+
+            .start_button {
+                width:50%;
+                position:relative;
+                bottom:0px;
+                margin-left:25%;
+                margin-top:30%;
+            }
+        }
+
+        body{
+            margin:0;
+            padding:0;
+            overflow-y:scroll;
+            scrollbar-width:none;
+            -ms-overflow-style:none;
+            animation: fadein 2000ms ease-out;
+            -moz-animation: fadein 2000ms ease-out; /* Firefox */
+            -webkit-animation: fadein 2000ms ease-out; /* Safari and  Chrome */
+            -o-animation: fadein 2000ms ease-out; /* Opera */
+        }
+
+        .select_button {
+            font-family: 'Jeju Myeongjo',serif;
+            font-size:15px;
+            background-color:white;
+            width:100%;
+            height:50px;
+            padding-bottom:3px;
+            border-top:0px;
+            border-bottom:1px solid black;
+            border-top:1px solid black;
+            transform: translate3d(0, 0, 0);
+            -webkit-text-fill-color:black;
+        }
+
+        .select_scroll_box {
+            position:relative;
+            overflow-y:scroll;
+            overflow-x:hidden;
+            scrollbar-width:none;
+            -ms-overflow-style:none;
+            height:96%;
             width:100%;
             bottom:0;
-            text-align:center;
+            z-index:1;
+            margin-left:auto;
+            margin-right:auto;
+        }
+
+
+
+
+        @keyframes fadein {
+            from {opacity:0;}
+            to {opacity:1;}
+        }
+        @-moz-keyframes fadein { /* Firefox */
+            from {opacity:0;}
+            to {opacity:1;}
+        }
+        @-webkit-keyframes fadein { /* Safari and Chrome */
+            from {opacity:0;}
+            to {opacity:1;}
+        }
+        @-o-keyframes fadein { /* Opera */
+            from {opacity:0;}
+            to {opacity: 1;}
         }
     </style>
+    <meta charset="utf-8">
+    <meta http-equiv="page-enter" content="blendTrans(duration=0.3)">
+    <meta http-equiv="page-exit" content="blendTrans(duration=0.3)">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-<div class="title">
-    <hr><hr>
+
+<div class="location">
+    <hr>
     <h1>Escape GBS</h1>
-    <hr><hr>
+    <hr>
 </div>
 
-<div class="trivia">
+<div class="scroll_box">
+    <div class="mimage_box">
+        <img class="mimage" src="https://ww.namu.la/s/5e62b27e4490f3e59183b61ad8bdf55b761f2108cc5cb992043424d8ce0642123b9bee4bb3ba53231dac8cae8152597511eb71e045f53794ad8e105eb6c015dc433e07f997440a2b8ea99471fc76ee723b84d423fb378790fd2e2c41a6adb4e4"/>
+    </div>
+    <div class="comment-box">
+        <p class="typing-text"></p>
+        <a href="/game"><img class="start_button" src="https://www.pngkey.com/png/full/110-1108877_start-button-start-button-png.png"/><a/>
+    </div>
+</div>
+<div class="bottom">
     <hr>
     <b>그거 아세요?</b>
-    <p>언리버는 사실 언리얼엔진을 사용하지 않는답니다.</p>
+    <p class="trivia"></p>
+    </div>
 </div>
+
+
+
+<script>
+    let random = Math.floor(Math.random()*10)
+    const content = "`언리버 17기가 만든 텍스트 기반 탈출게임"
+    const text = document.querySelector(".typing-text")
+    const trivia = document.querySelector(".trivia")
+    let index = 0;
+
+    trivia.textContent = "언리버는 UNREVR지만 사실 언리얼도 VR도 하지 않는답니다."
+
+    window.history.forward();
+    function noBack(){window.history.forward();} //뒤로가기 방지
+
+    function checkRow(event) { var event_test = event; alert(event_test); }
+
+    history.pushState(null, null, location.href);
+    window.onpopstate = function(event) {
+        history.go(1);
+    };
+
+
+
+
+
+    function typing(){
+        let txt = content[index++];
+        if(index <= content.length){
+            if(txt=="@") text.innerHTML += "<br/>";
+            else if(txt=="`") text.innerHTML +="&nbsp&nbsp";
+            else text.innerHTML += txt;
+        }
+    }
+
+    setInterval(typing, 8)
+
+
+    jQuery(function($) {
+        $("body").css("display", "none");
+        $("body").fadeIn(2000);
+        $("a.transition").click(function(event){
+            event.preventDefault();
+            linkLocation = this.href;
+            $("body").fadeOut(1000, redirectPage);
+        });
+        function redirectPage() {
+            window.location = linkLocation;
+        }
+    });
+
+
+
+
+</script>
 </body>
-</html>

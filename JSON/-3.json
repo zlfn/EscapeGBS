@@ -3,43 +3,61 @@
   "location": "#?",
   "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0DNHcDQc5STklDFujhq2sHyAx_8soNeqXGg&usqp=CAU",
   "conditional": false,
+  "getcon": [],
+  "getgad": [],
+  "lostcon": [],
+  "lostgad": [],
+  "revcon": [],
+  "revgad": [],
   "choices":
   [
     {
       "text":"-",
-      "link":"-3 0",
-      "req": 0,
-      "number": 0
+      "link":"-3 0 0",
+      "conreq": false,
+      "gadreq": false,
+      "condition": [],
+      "gadget": []
     },
     {
       "text":"-",
-      "link":"-3 0",
-      "req": 0,
-      "number": 0
+      "link":"-3 0 1",
+      "conreq": false,
+      "gadreq": false,
+      "condition": [],
+      "gadget": []
     },
     {
       "text":"-",
-      "link":"-3 0",
-      "req": 0,
-      "number": 0
+      "link":"-3 0 2",
+      "conreq": false,
+      "gadreq": false,
+      "condition": [],
+      "gadget": []
     },
     {
       "text":"-",
-      "link":"-3 0",
-      "req": 0,
-      "number": 0
+      "link":"-3 0 3",
+      "conreq": false,
+      "gadreq": false,
+      "condition": [],
+      "gadget": []
     },
     {
       "text":"-",
-      "link":"-3 0",
-      "req": 0,
-      "number": 0
+      "link":"-3 0 4",
+      "conreq": false,
+      "gadreq": false,
+      "condition": [],
+      "gadget": []
     },
     {
       "text":"-",
-      "link":"-3 0",
-      "req": 0,
-      "number": 0
+      "link":"-3 0 5",
+      "conreq": false,
+      "gadreq": false,
+      "condition": [],
+      "gadget": []
     }
   ]
 }

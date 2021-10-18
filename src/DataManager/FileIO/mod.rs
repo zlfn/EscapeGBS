@@ -11,20 +11,28 @@ use super::GameState;
 #[derive(serde::Serialize, serde::Deserialize)]
 pub struct choice
 {
-    text:String,
-    link:String,
-    req:u32,
-    number:usize
+    pub text:String,
+    pub link:String,
+    pub conreq:bool,
+    pub gadreq:bool,
+    pub condition:Vec<usize>,
+    pub gadget:Vec<usize>
 }
 
 #[derive(serde::Serialize, serde::Deserialize)]
 pub struct JsonFormat
 {
-    comment:String,
-    location:String,
-    image:String,
-    conditional:bool,
-    choices:Vec<choice>
+    pub comment:String,
+    pub location:String,
+    pub image:String,
+    pub conditional:bool,
+    pub getcon:Vec<i32>,
+    pub getgad:Vec<i32>,
+    pub lostcon:Vec<i32>,
+    pub lostgad:Vec<i32>,
+    pub revcon:Vec<i32>,
+    pub revgad:Vec<i32>,
+    pub choices:Vec<choice>
 }
 
 ///입력된 주소에서 파일을 찾아 읽어서 String으로 반환합니다.
@@ -392,7 +400,39 @@ pub fn BuildHTML_nostate(to:i32) -> Result<content::Html<String>,io::Error>
     return Ok(content::Html(s));
 }
 
+pub fn GetState(to:i32,mut state:&mut GameState)
+{
+    state.page = to;
+    let mut json_path = format!("JSON/{}.json", to);
+    let mut file = &ReadFile(&json_path).unwrap()[..];
 
+    let mut data: JsonFormat = serde_json::from_str(file).unwrap();
+
+    for a in data.getcon.iter()
+    {
+        state.condition[usize::try_from(*a).unwrap()] = true;
+    }
+    for a in data.getgad.iter()
+    {
+        state.gadget[usize::try_from(*a).unwrap()] = true;
+    }
+    for a in data.lostcon.iter()
+    {
+        state.condition[usize::try_from(*a).unwrap()] = false;
+    }
+    for a in data.lostgad.iter()
+    {
+        state.gadget[usize::try_from(*a).unwrap()] = false;
+    }
+    for a in data.revcon.iter()
+    {
+        state.condition[usize::try_from(*a).unwrap()] = !state.condition[usize::try_from(*a).unwrap()]
+    }
+    for a in data.revgad.iter()
+    {
+        state.gadget[usize::try_from(*a).unwrap()] = !state.gadget[usize::try_from(*a).unwrap()]
+    }
+}
 pub fn BuildHTML(from:i32, to:i32, state:&GameState) ->Result<content::Html<String>,io::Error>
 {
     let mut json_path = format!("JSON/{}.json", to);
@@ -402,16 +442,27 @@ pub fn BuildHTML(from:i32, to:i32, state:&GameState) ->Result<content::Html<Stri
 
     for mut c in data.choices.iter_mut()
     {
-        if c.req==0 {continue;}
-        if (c.req==1) && (!state.condition[c.number])
+        if c.conreq==true
         {
-            c.text = String::from("-");
-            c.link = String::from(format!("{} 0",from));
+            for i in c.condition.iter()
+            {
+                if !state.condition[*i]
+                {
+                    c.text = String::from("-");
+                    c.link = String::from(format!("{} 0",from));
+                }
+            }
         }
-        if (c.req==2) && (!state.gadget[c.number])
+        if c.gadreq==true
         {
-            c.text = String::from("-");
-            c.link = String::from(format!("{} 0",from));
+            for i in c.gadget.iter()
+            {
+                if !state.gadget[*i]
+                {
+                    c.text = String::from("-");
+                    c.link = String::from(format!("{} 0",from));
+                }
+            }
         }
     }
 
