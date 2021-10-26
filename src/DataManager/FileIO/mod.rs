@@ -468,7 +468,7 @@ pub fn BuildHTML(from:i32, to:i32, state:&GameState) ->Result<content::Html<Stri
                 if !state.condition[*i]
                 {
                     c.text = String::from("-");
-                    c.link = String::from(format!("{} 0 0",from));
+                    c.link = String::from(format!("{} 0 0",to));
                 }
             }
         }
@@ -479,7 +479,7 @@ pub fn BuildHTML(from:i32, to:i32, state:&GameState) ->Result<content::Html<Stri
                 if !state.gadget[*i]
                 {
                     c.text = String::from("-");
-                    c.link = String::from(format!("{} 0 0",from));
+                    c.link = String::from(format!("{} 0 0",to));
                 }
             }
         }
