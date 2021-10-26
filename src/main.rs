@@ -37,8 +37,10 @@ fn game(mut cookies:Cookies) -> content::Html<String> {
     if let Err(E) = session {return BuildHTML_nostate(-3).unwrap();}
     let session = session.unwrap();
 
-    let mut state = ReadSession(session);
-    return DataManager::FileIO::BuildHTML(0,111001,&state.unwrap()).unwrap();
+    let mut state = ReadSession(session).unwrap();
+    GetState(111001, &mut state);
+    WriteSession(session,&state);
+    return DataManager::FileIO::BuildHTML(0,111001,&state).unwrap();
 }
 
 #[post("/game",data="<selection>")]
@@ -63,6 +65,8 @@ fn game_post(selection:String, mut cookies:Cookies) -> content::Html<String> {
             return BuildHTML_nostate(-3).unwrap();
         }
         let mut state = state.unwrap();
+        GetState(111001, &mut state);
+        WriteSession(session,&state);
         return BuildHTML(0,111001,&state).unwrap();
     }
 
