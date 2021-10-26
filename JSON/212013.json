@@ -1,0 +1,62 @@
+{
+    "comment": "`언리버 부원을 모집하는 포스터이다. 포스터가 아주 멋져 보인다. 나도 언리버의 부원이 되고 싶다는 생각이 든다. 그러나 지금 나에게 필요해 보이지는 않는다. 다시 메이커실을 둘러보자.@`@`",
+    "location": "#메이커실",
+    "image": "https://i.ibb.co/D55BKpV/0ed6a6ae9db0.jpg",
+    "conditional": false,
+    "getcon": [],
+    "getgad": [],
+    "lostcon": [],
+    "lostgad": [],
+    "revcon": [],
+    "revgad": [],
+    "choices": [
+        {
+            "text": "-공작실을 둘러본다.",
+            "link": "212013 212014 0",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        },
+        {
+            "text": "-자물쇠를 다시 확인한다.",
+            "link": "212013 212004 1",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        },
+        {
+            "text": "-",
+            "link": "212013 0 2",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        },
+        {
+            "text": "-",
+            "link": "212013 0 3",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        },
+        {
+            "text": "-",
+            "link": "212013 0 4",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        },
+        {
+            "text": "-",
+            "link": "212013 0 5",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        }
+    ]
+}

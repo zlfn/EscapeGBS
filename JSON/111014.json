@@ -1,0 +1,62 @@
+{
+    "comment": "`물을 마셨더니 갈증이 해소되었다! 자고 일어나서 목이 말랐나보다.",
+    "location": "#기숙사",
+    "image": "https://i.ibb.co/H41dVpF/3559214ef52e.jpg",
+    "conditional": false,
+    "getcon": [],
+    "getgad": [],
+    "lostcon": [],
+    "lostgad": [],
+    "revcon": [],
+    "revgad": [],
+    "choices": [
+        {
+            "text": "다음",
+            "link": "111014 31 0",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        },
+        {
+            "text": "-",
+            "link": "111014 0 1",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        },
+        {
+            "text": "-",
+            "link": "111014 0 2",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        },
+        {
+            "text": "-",
+            "link": "111014 0 3",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        },
+        {
+            "text": "-",
+            "link": "111014 0 4",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        },
+        {
+            "text": "-",
+            "link": "111014 0 5",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        }
+    ]
+}

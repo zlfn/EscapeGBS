@@ -1,0 +1,62 @@
+{
+    "comment": "`일반물리학 책은 나도 있으나 왠지 룸메이트의 일반물리학책은 특별해 보인다. 전자기유도와 관련된 부분에만 메모가 가득한 걸 보아 룸메이트는 전자기 유도 관련 연구를 진행하고 있는 것 같다.",
+    "location": "#기숙사",
+    "image": "https://i.ibb.co/gWqwrCG/20804452b353.jpg",
+    "conditional": false,
+    "getcon": [],
+    "getgad": [],
+    "lostcon": [],
+    "lostgad": [],
+    "revcon": [],
+    "revgad": [],
+    "choices": [
+        {
+            "text": "하나도 모르겠다.",
+            "link": "111011 13 0",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        },
+        {
+            "text": "-",
+            "link": "111011 0 1",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        },
+        {
+            "text": "-",
+            "link": "111011 0 2",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        },
+        {
+            "text": "-",
+            "link": "111011 0 3",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        },
+        {
+            "text": "-",
+            "link": "111011 0 4",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        },
+        {
+            "text": "-",
+            "link": "111011 0 5",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        }
+    ]
+}

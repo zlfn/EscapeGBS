@@ -1,0 +1,62 @@
+{
+    "comment": "`당신은 가까이 다가오는 벌레를 보고 몸이 굳어 버렸습니다.@`이런, 몸이 완전히 굳어 돌하르방이 된듯합니다.@`돌하르방은 현무암으로 만들었던가?@`지구과학 실험 재료가 될 것 같습니다.",
+    "location": "#DEATH",
+    "image": "https://i.ibb.co/tp9WsV7/f085e9e244b2.jpg",
+    "conditional": false,
+    "getcon": [],
+    "getgad": [],
+    "lostcon": [],
+    "lostgad": [],
+    "revcon": [],
+    "revgad": [],
+    "choices": [
+        {
+            "text": "다시하기",
+            "link": "211037 -1 0",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        },
+        {
+            "text": "-",
+            "link": "211037 0 1",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        },
+        {
+            "text": "-",
+            "link": "211037 0 2",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        },
+        {
+            "text": "-",
+            "link": "211037 0 3",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        },
+        {
+            "text": "-",
+            "link": "211037 0 4",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        },
+        {
+            "text": "-",
+            "link": "211037 0 5",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        }
+    ]
+}

@@ -1,0 +1,62 @@
+{
+    "comment": "`실험동 4층에 도착했다. 3층으로 내려가는 계단에 발명품들이 쌓여있어서 지나갈 수 없다. 어떻게 할까?",
+    "location": "#실험동 4층 계단",
+    "image": "https://i.ibb.co/cg4nNNt/fa5ceb133f60.jpg",
+    "conditional": false,
+    "getcon": [],
+    "getgad": [],
+    "lostcon": [],
+    "lostgad": [],
+    "revcon": [],
+    "revgad": [],
+    "choices": [
+        {
+            "text": "-발명품을 치운다.",
+            "link": "212001 212002 0",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        },
+        {
+            "text": "-물리실로 들어간다.",
+            "link": "212001 212003 1",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        },
+        {
+            "text": "-",
+            "link": "212001 0 2",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        },
+        {
+            "text": "-",
+            "link": "212001 0 3",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        },
+        {
+            "text": "-",
+            "link": "212001 0 4",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        },
+        {
+            "text": "-",
+            "link": "212001 0 5",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        }
+    ]
+}

@@ -1,0 +1,62 @@
+{
+    "comment": "`쓰레기통을 들여다 보니, 먹다남은 빵과 구겨진 종이가 보인다. 깨끗한 것 같은데, 꺼내 볼까?",
+    "location": "#기숙사",
+    "image": "https://i.ibb.co/qRBXtwK/c30f62d63419.jpg",
+    "conditional": false,
+    "getcon": [],
+    "getgad": [],
+    "lostcon": [],
+    "lostgad": [],
+    "revcon": [],
+    "revgad": [],
+    "choices": [
+        {
+            "text": "먹다남은 빵을 먹는다.",
+            "link": "111015 111041 0",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        },
+        {
+            "text": "구겨진 종이를 확인한다.",
+            "link": "111015 111023 1",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        },
+        {
+            "text": "그만둔다.",
+            "link": "111015 111031 2",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        },
+        {
+            "text": "-",
+            "link": "111015 0 3",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        },
+        {
+            "text": "-",
+            "link": "111015 0 4",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        },
+        {
+            "text": "-",
+            "link": "111015 0 5",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        }
+    ]
+}

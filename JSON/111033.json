@@ -1,0 +1,66 @@
+{
+    "comment": "`룸메이트가 장치를 만들었을때 사용했던 것으로 보이는 공구함을 열어보니@`드라이버가 있다. 드라이버를 챙겼다.",
+    "location": "#기숙사",
+    "image": "https://i.ibb.co/DfTZ5X3/270703b744c2.jpg",
+    "conditional": false,
+    "getcon": [],
+    "getgad": [
+        5
+    ],
+    "lostcon": [],
+    "lostgad": [
+        15
+    ],
+    "revcon": [],
+    "revgad": [],
+    "choices": [
+        {
+            "text": "다음",
+            "link": "111033 111013 0",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        },
+        {
+            "text": "-",
+            "link": "111033 0 1",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        },
+        {
+            "text": "-",
+            "link": "111033 0 2",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        },
+        {
+            "text": "-",
+            "link": "111033 0 3",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        },
+        {
+            "text": "-",
+            "link": "111033 0 4",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        },
+        {
+            "text": "-",
+            "link": "111033 0 5",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        }
+    ]
+}

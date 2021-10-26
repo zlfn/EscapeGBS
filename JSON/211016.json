@@ -1,0 +1,66 @@
+{
+    "comment": "`검은 선이 아니라 포스터였다. 개학날 진행하는 현미경 체험 안내인 것 같다. 이왕 학교에 남아 있는 김에 미리 체험 해보면 좋을 것 같다. 2층에 가면 생명과학실험실에서 현미경을 사용 할 수 있다.",
+    "location": "#하나마루",
+    "image": "https://i.ibb.co/qyyXQqK/df19e3b511ae.jpg",
+    "conditional": false,
+    "getcon": [
+        3
+    ],
+    "getgad": [],
+    "lostcon": [
+        13
+    ],
+    "lostgad": [],
+    "revcon": [],
+    "revgad": [],
+    "choices": [
+        {
+            "text": "-다음",
+            "link": "211016 211017 0",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        },
+        {
+            "text": "-",
+            "link": "211016 0 1",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        },
+        {
+            "text": "-",
+            "link": "211016 0 2",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        },
+        {
+            "text": "-",
+            "link": "211016 0 3",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        },
+        {
+            "text": "-",
+            "link": "211016 0 4",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        },
+        {
+            "text": "-",
+            "link": "211016 0 5",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        }
+    ]
+}

@@ -1,0 +1,76 @@
+{
+    "comment": "`빨간색 상자 안에 자석과 무언가를 끼울 수 있을 듯한 홈이 보인다. 볼품없어 보이는 걸 보아 아직 미완성인 듯 하다. 룸메이트의 노트를 보면 이 장치가 무엇을 하는 것인지 알 수 있을까?",
+    "location": "#기숙사",
+    "image": "https://i.ibb.co/ZgdcDV1/b9471e2df13a.jpg",
+    "conditional": true,
+    "getcon": [],
+    "getgad": [],
+    "lostcon": [],
+    "lostgad": [],
+    "revcon": [],
+    "revgad": [],
+    "choices": [
+        {
+            "text": "음…",
+            "link": "111009 111013 0",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        },
+        {
+            "text": "전선을 감아본다.",
+            "link": "111009 111018 1",
+            "conreq": true,
+            "gadreq": true,
+            "condition": [
+                17
+            ],
+            "gadget": [
+                3
+            ]
+        },
+        {
+            "text": "건전지를 끼워본다.",
+            "link": "111009 111019 2",
+            "conreq": true,
+            "gadreq": true,
+            "condition": [
+                17,
+                18
+            ],
+            "gadget": [
+                1
+            ]
+        },
+        {
+            "text": "건전지를 끼워본다.",
+            "link": "111009 111026 3",
+            "conreq": true,
+            "gadreq": true,
+            "condition": [
+                7,
+                18
+            ],
+            "gadget": [
+                1
+            ]
+        },
+        {
+            "text": "-",
+            "link": "111009 0 4",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        },
+        {
+            "text": "-",
+            "link": "111009 0 5",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        }
+    ]
+}

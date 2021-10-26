@@ -1,0 +1,62 @@
+{
+    "comment": "`자물쇠로 잠겨있는 상자가 보인다. R&E물품이니 건드리지 말라는 문구와 함께 자물쇠 비밀번호에 대한 힌트가 붙어 있다. 어떻게 할까?@`@`",
+    "location": "#물리실",
+    "image": "https://i.ibb.co/6rTFDyR/93089856a935.jpg",
+    "conditional": false,
+    "getcon": [],
+    "getgad": [],
+    "lostcon": [],
+    "lostgad": [],
+    "revcon": [],
+    "revgad": [],
+    "choices": [
+        {
+            "text": "-문제를 푼다.",
+            "link": "212004 212006 0",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        },
+        {
+            "text": "-다시 물리실을 둘러본다.",
+            "link": "212004 212005 1",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        },
+        {
+            "text": "-자물쇠를 부순다.",
+            "link": "212004 212016 2",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        },
+        {
+            "text": "-",
+            "link": "212004 0 3",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        },
+        {
+            "text": "-",
+            "link": "212004 0 4",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        },
+        {
+            "text": "-",
+            "link": "212004 0 5",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        }
+    ]
+}

@@ -1,0 +1,64 @@
+{
+    "comment": "`알람시계다. 시간이 흐르고 있다.",
+    "location": "#기숙사",
+    "image": "https://i.ibb.co/PTxVf4W/5a5137b53108.jpg",
+    "conditional": true,
+    "getcon": [],
+    "getgad": [],
+    "lostcon": [],
+    "lostgad": [],
+    "revcon": [],
+    "revgad": [],
+    "choices": [
+        {
+            "text": "시계를 분해한다.",
+            "link": "111034 111036 0",
+            "conreq": false,
+            "gadreq": true,
+            "condition": [],
+            "gadget": [
+                5
+            ]
+        },
+        {
+            "text": "시간을 확인한다.",
+            "link": "111034 111037 1",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        },
+        {
+            "text": "-",
+            "link": "111034 0 2",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        },
+        {
+            "text": "-",
+            "link": "111034 0 3",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        },
+        {
+            "text": "-",
+            "link": "111034 0 4",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        },
+        {
+            "text": "-",
+            "link": "111034 0 5",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        }
+    ]
+}

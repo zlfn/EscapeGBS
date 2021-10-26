@@ -1,0 +1,62 @@
+{
+    "comment": "`일단 오늘 하루를 정리해 보자. 눈을 뜨니 기숙사였고 방학을 해서 학교엔 나 혼자고, 근데 모든 문이 잠겨서 나갈 수가 없다. 굉장히 배가 고프고 힘든 상태다. 집에 가고 싶다. @`@`",
+    "location": "#생명실",
+    "image": "https://i.ibb.co/2Ndyc0m/a4ec93223342.jpg",
+    "conditional": false,
+    "getcon": [],
+    "getgad": [],
+    "lostcon": [],
+    "lostgad": [],
+    "revcon": [],
+    "revgad": [],
+    "choices": [
+        {
+            "text": "-긍정적으로 생각하자!",
+            "link": "214008 214009 0",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        },
+        {
+            "text": "-부정적으로 생각하자...",
+            "link": "214008 214013 1",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        },
+        {
+            "text": "-",
+            "link": "214008 0 2",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        },
+        {
+            "text": "-",
+            "link": "214008 0 3",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        },
+        {
+            "text": "-",
+            "link": "214008 0 4",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        },
+        {
+            "text": "-",
+            "link": "214008 0 5",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        }
+    ]
+}

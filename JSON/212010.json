@@ -1,0 +1,62 @@
+{
+    "comment": "`발명품을 밀었으나 조금도 움직이지 않는다. 발명품이 너무 무거워 내 힘으로는 치울 수 없을 듯 하다. 지렛대로 쓸만한 막대가 있으니 받침점으로 쓸 물체만 있으면 발명품을 옮길 수 있을 것 같다. 이제 무엇을 할까?@`@`",
+    "location": "#실험동 4층 계단",
+    "image": "https://i.ibb.co/cg4nNNt/fa5ceb133f60.jpg",
+    "conditional": false,
+    "getcon": [],
+    "getgad": [],
+    "lostcon": [],
+    "lostgad": [],
+    "revcon": [],
+    "revgad": [],
+    "choices": [
+        {
+            "text": "-메이커실로 간다.",
+            "link": "212010 212011 0",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        },
+        {
+            "text": "-앉아서 잠시 생각한다.",
+            "link": "212010 212010 1",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        },
+        {
+            "text": "-",
+            "link": "212010 0 2",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        },
+        {
+            "text": "-",
+            "link": "212010 0 3",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        },
+        {
+            "text": "-",
+            "link": "212010 0 4",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        },
+        {
+            "text": "-",
+            "link": "212010 0 5",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        }
+    ]
+}

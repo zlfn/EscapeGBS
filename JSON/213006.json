@@ -1,0 +1,62 @@
+{
+    "comment": "`준비실로 들어가려는데 준비실 문이 잠겨있다. 화학실에 있는 컴퓨터를 이용해 문을 열 수 있는 것 같다. 컴퓨터 옆에는 커피 쿠폰이 하나 놓여져 있다. 혹시 비밀번호를 알아내려는 힌트이려나?@`@`",
+    "location": "#화학실",
+    "image": "https://i.ibb.co/872Fc9C/cb1952cf4d63.jpg",
+    "conditional": false,
+    "getcon": [],
+    "getgad": [],
+    "lostcon": [],
+    "lostgad": [],
+    "revcon": [],
+    "revgad": [],
+    "choices": [
+        {
+            "text": "-비밀번호를 풀어본다.",
+            "link": "213006 213007 0",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        },
+        {
+            "text": "-화학실을 둘러본다.",
+            "link": "213006 213009 1",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        },
+        {
+            "text": "-",
+            "link": "213006 0 2",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        },
+        {
+            "text": "-",
+            "link": "213006 0 3",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        },
+        {
+            "text": "-",
+            "link": "213006 0 4",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        },
+        {
+            "text": "-",
+            "link": "213006 0 5",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        }
+    ]
+}

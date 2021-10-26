@@ -1,0 +1,66 @@
+{
+    "comment": "`침대 옆에는 프린트들이 널브러져 있다. 룸메이트가 진행하는 연구 준비물들과 학교 프린트들이다. 방학하면 짐을 다 뺐어야 됐을 텐데, 어지간히 정신이 없었나 보다. 나중에 한 소리 해줘야겠다. 그런데 무슨 연구하는 걸까?",
+    "location": "#기숙사",
+    "image": "https://i.ibb.co/Xt3fZZJ/034afc3b559b.jpg",
+    "conditional": true,
+    "getcon": [],
+    "getgad": [],
+    "lostcon": [],
+    "lostgad": [],
+    "revcon": [],
+    "revgad": [],
+    "choices": [
+        {
+            "text": "연구 준비물을 자세히 살펴본다.",
+            "link": "111003 111005 0",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        },
+        {
+            "text": "학교 프린트를 살펴본다.",
+            "link": "111003 111006 1",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        },
+        {
+            "text": "알람시계를 살펴본다.",
+            "link": "111003 111034 2",
+            "conreq": true,
+            "gadreq": false,
+            "condition": [
+                12
+            ],
+            "gadget": []
+        },
+        {
+            "text": "알람시계를 살펴본다.",
+            "link": "111003 111035 3",
+            "conreq": true,
+            "gadreq": false,
+            "condition": [
+                2
+            ],
+            "gadget": []
+        },
+        {
+            "text": "일단 밖으로 나간다.",
+            "link": "111003 111007 4",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        },
+        {
+            "text": "-",
+            "link": "111003 0 5",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        }
+    ]
+}

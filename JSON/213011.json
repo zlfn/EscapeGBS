@@ -1,0 +1,62 @@
+{
+    "comment": "`비밀번호를 입력했더니 준비실 문이 열렸다. 비밀번호도 원소기호를 이용해 만들어 놓다니 화학실답다. 준비실에는 온갖 약품들이 놓여 있다. 이제 무엇을 할까?@`@`",
+    "location": "#준비실",
+    "image": "https://i.ibb.co/FxSBst4/ccbaecab7891.jpg",
+    "conditional": false,
+    "getcon": [],
+    "getgad": [],
+    "lostcon": [],
+    "lostgad": [],
+    "revcon": [],
+    "revgad": [],
+    "choices": [
+        {
+            "text": "-산성 용액을 자세히 살펴본다.",
+            "link": "213011 213012 0",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        },
+        {
+            "text": "-염기성 용액을 자세히 살펴본다.",
+            "link": "213011 213013 1",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        },
+        {
+            "text": "-",
+            "link": "213011 0 2",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        },
+        {
+            "text": "-",
+            "link": "213011 0 3",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        },
+        {
+            "text": "-",
+            "link": "213011 0 4",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        },
+        {
+            "text": "-",
+            "link": "213011 0 5",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        }
+    ]
+}

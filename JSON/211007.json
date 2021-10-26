@@ -1,0 +1,62 @@
+{
+    "comment": "`핸드폰이 신호가 잡히지 않는다. 한 번도 이런적이 없었는데 왜 신호가 잡히지 않는걸까? 휴대폰을 밖으로?",
+    "location": "#실험동 5층 복도",
+    "image": "https://i.ibb.co/WWcmwdY/7f1426884cff.jpg",
+    "conditional": false,
+    "getcon": [],
+    "getgad": [],
+    "lostcon": [],
+    "lostgad": [],
+    "revcon": [],
+    "revgad": [],
+    "choices": [
+        {
+            "text": "-창문을 열어 핸드폰을 밖으로 내민다.",
+            "link": "211007 211035 0",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        },
+        {
+            "text": "-하나마루(천문대)로 올라간다.",
+            "link": "211007 211008 1",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        },
+        {
+            "text": "-",
+            "link": "211007 0 2",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        },
+        {
+            "text": "-",
+            "link": "211007 0 3",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        },
+        {
+            "text": "-",
+            "link": "211007 0 4",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        },
+        {
+            "text": "-",
+            "link": "211007 0 5",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        }
+    ]
+}

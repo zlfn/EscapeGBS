@@ -1,0 +1,62 @@
+{
+    "comment": "`헉..헉 열심히 도망치는 중이나 더 이상 갈 곳이 없다. 이제 무엇을 할까?@`@`",
+    "location": "#분자생물학실",
+    "image": "https://i.ibb.co/3pKvMMk/998631074e10.jpg",
+    "conditional": false,
+    "getcon": [],
+    "getgad": [],
+    "lostcon": [],
+    "lostgad": [],
+    "revcon": [],
+    "revgad": [],
+    "choices": [
+        {
+            "text": "-비밀번호를 풀어 잠겨 있는 분자생물학실 문을 연다.",
+            "link": "214017 214024 0",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        },
+        {
+            "text": "-힘으로 잠겨 있는 분자생물학실 문을 연다.",
+            "link": "214017 214025 1",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        },
+        {
+            "text": "-",
+            "link": "214017 0 2",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        },
+        {
+            "text": "-",
+            "link": "214017 0 3",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        },
+        {
+            "text": "-",
+            "link": "214017 0 4",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        },
+        {
+            "text": "-",
+            "link": "214017 0 5",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        }
+    ]
+}

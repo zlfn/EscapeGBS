@@ -1,0 +1,62 @@
+{
+    "comment": "`으악! 진짜 좀비잖아! 으악! 진짜 좀비잖아! 으악! 진짜 좀비잖아! 으악! 진짜 좀비잖아!",
+    "location": "#생명실",
+    "image": "https://i.ibb.co/Mfjtbrk/ac2368459d43.jpg",
+    "conditional": false,
+    "getcon": [],
+    "getgad": [],
+    "lostcon": [],
+    "lostgad": [],
+    "revcon": [],
+    "revgad": [],
+    "choices": [
+        {
+            "text": "-돔황차",
+            "link": "214011 214017 0",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        },
+        {
+            "text": "-으악!",
+            "link": "214011 214020 1",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        },
+        {
+            "text": "-어...?",
+            "link": "214011 214018 2",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        },
+        {
+            "text": "-저리가!",
+            "link": "214011 214019 3",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        },
+        {
+            "text": "-",
+            "link": "214011 0 4",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        },
+        {
+            "text": "-",
+            "link": "214011 0 5",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        }
+    ]
+}

@@ -1,0 +1,66 @@
+{
+    "comment": "`룸메이트의 장치를 완성했다! 실험장치로 건전지를 충전해 보았더니, 훌륭하게 작동한다. 룸메이트가 기뻐할 것이다. 나중에 돌려줘야겠다.",
+    "location": "#기숙사",
+    "image": "https://i.ibb.co/cy8dDtQ/54c94ab9bb41.jpg",
+    "conditional": false,
+    "getcon": [],
+    "getgad": [
+        2
+    ],
+    "lostcon": [],
+    "lostgad": [
+        12
+    ],
+    "revcon": [],
+    "revgad": [],
+    "choices": [
+        {
+            "text": "다음",
+            "link": "111026 111013 0",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        },
+        {
+            "text": "-",
+            "link": "111026 0 1",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        },
+        {
+            "text": "-",
+            "link": "111026 0 2",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        },
+        {
+            "text": "-",
+            "link": "111026 0 3",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        },
+        {
+            "text": "-",
+            "link": "111026 0 4",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        },
+        {
+            "text": "-",
+            "link": "111026 0 5",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        }
+    ]
+}

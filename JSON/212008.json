@@ -1,0 +1,62 @@
+{
+    "comment": "`자물쇠를 열었더니 지렛대로 쓸만한 막대가 들어있다. 이것을 이용하면 발명품을 치울 수 있지 않을까? 이제 무엇을 할까?",
+    "location": "#물리실",
+    "image": "https://i.ibb.co/543Btzf/edd93973e395.jpg",
+    "conditional": false,
+    "getcon": [],
+    "getgad": [],
+    "lostcon": [],
+    "lostgad": [],
+    "revcon": [],
+    "revgad": [],
+    "choices": [
+        {
+            "text": "-물리실을 더 둘러본다.",
+            "link": "212008 212009 0",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        },
+        {
+            "text": "-메이커실로 간다.",
+            "link": "212008 212011 1",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        },
+        {
+            "text": "-발명품을 다시 밀어본다.",
+            "link": "212008 212010 2",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        },
+        {
+            "text": "-",
+            "link": "212008 0 3",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        },
+        {
+            "text": "-",
+            "link": "212008 0 4",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        },
+        {
+            "text": "-",
+            "link": "212008 0 5",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        }
+    ]
+}

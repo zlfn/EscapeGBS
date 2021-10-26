@@ -1,0 +1,62 @@
+{
+    "comment": "`“건전지는 몰래 기숙사 현관 잠금장치에서 뽑아왔다. 이제 방학이니까 아마 아무도 모를 것이다.. 혹시나 안될 경우에는 룸메이트의 알람시계에서 건전지를 몰래 꺼낼 계획이다.”@`내 알람시계에서 건전지를 꺼내려했다니 앞으로 잘 숨겨둬야겠다.",
+    "location": "#기숙사",
+    "image": "https://i.ibb.co/6wvJZqq/6443a373d4b0.jpg",
+    "conditional": false,
+    "getcon": [],
+    "getgad": [],
+    "lostcon": [],
+    "lostgad": [],
+    "revcon": [],
+    "revgad": [],
+    "choices": [
+        {
+            "text": "그만 본다...",
+            "link": "111038 111013 0",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        },
+        {
+            "text": "다음 페이지를 본다.",
+            "link": "111038 111039 1",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        },
+        {
+            "text": "-",
+            "link": "111038 0 2",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        },
+        {
+            "text": "-",
+            "link": "111038 0 3",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        },
+        {
+            "text": "-",
+            "link": "111038 0 4",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        },
+        {
+            "text": "-",
+            "link": "111038 0 5",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        }
+    ]
+}

@@ -1,0 +1,62 @@
+{
+    "comment": "`지렛대를 만들려면 당연히 원리를 알아야 한다.물리학 문제로 머리를 풀자.",
+    "location": "#공작실",
+    "image": "https://i.ibb.co/KwkQtyp/06c03fb1642b.jpg",
+    "conditional": false,
+    "getcon": [],
+    "getgad": [],
+    "lostcon": [],
+    "lostgad": [],
+    "revcon": [],
+    "revgad": [],
+    "choices": [
+        {
+            "text": "9",
+            "link": "212025 212027 0",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        },
+        {
+            "text": "10",
+            "link": "212025 212028 1",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        },
+        {
+            "text": "11",
+            "link": "212025 212027 2",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        },
+        {
+            "text": "12",
+            "link": "212025 212027 3",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        },
+        {
+            "text": "13",
+            "link": "212025 212027 4",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        },
+        {
+            "text": "14",
+            "link": "212025 212027 5",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        }
+    ]
+}

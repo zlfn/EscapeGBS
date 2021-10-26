@@ -1,0 +1,62 @@
+{
+    "comment": "`학습실에 도착했다. 아마 충전기는 친구 책상에 있을 것이다. 친구의 책상 사물함은 비밀번호로 잠겨있다. 그것도 변태 같은 문제로 말이다. 충전기를 꺼내려면 이 변태 같은 문제를 풀어야 한다. 어떻게 할까?",
+    "location": "#학습실",
+    "image": "https://i.ibb.co/GMvC09q/37ac0b2d5f99.jpg",
+    "conditional": false,
+    "getcon": [],
+    "getgad": [],
+    "lostcon": [],
+    "lostgad": [],
+    "revcon": [],
+    "revgad": [],
+    "choices": [
+        {
+            "text": "나도 변태가 되지 않게 조심하며 문제를 풀어보자.",
+            "link": "211001 211002 0",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        },
+        {
+            "text": "변태같은 문제 따윈 풀지 않는다.",
+            "link": "211001 211003 1",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        },
+        {
+            "text": "-",
+            "link": "211001 0 2",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        },
+        {
+            "text": "-",
+            "link": "211001 0 3",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        },
+        {
+            "text": "-",
+            "link": "211001 0 4",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        },
+        {
+            "text": "-",
+            "link": "211001 0 5",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        }
+    ]
+}

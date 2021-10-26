@@ -1,0 +1,64 @@
+{
+    "comment": "`잠금장치를 자세히 살펴보니, 건전지가 없는 듯 하다.@`아마 누군가 건전지를 빼가서 잠금장치가 꺼진 듯 하다.",
+    "location": "#기숙사",
+    "image": "https://i.ibb.co/y4TgZ74/e5193a60f489.jpg",
+    "conditional": true,
+    "getcon": [],
+    "getgad": [],
+    "lostcon": [],
+    "lostgad": [],
+    "revcon": [],
+    "revgad": [],
+    "choices": [
+        {
+            "text": "충전해둔 건전지를 바꿔끼운다.",
+            "link": "111024 111028 0",
+            "conreq": false,
+            "gadreq": true,
+            "condition": [],
+            "gadget": [
+                2
+            ]
+        },
+        {
+            "text": "음……",
+            "link": "111024 111030 1",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        },
+        {
+            "text": "-",
+            "link": "111024 0 2",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        },
+        {
+            "text": "-",
+            "link": "111024 0 3",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        },
+        {
+            "text": "-",
+            "link": "111024 0 4",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        },
+        {
+            "text": "-",
+            "link": "111024 0 5",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        }
+    ]
+}

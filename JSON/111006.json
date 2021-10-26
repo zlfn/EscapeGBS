@@ -1,0 +1,62 @@
+{
+    "comment": "`룸메이트의 학교프린트 중에는 수학 문제가 적혀있는 것도 보인다. 수학 문제의 상단에 보니 꼭 방학에 집에 가져가 풀어보라는 말이 적혀있다. 혹시 일부러 놓고 간 걸까? 음.... 수학 문제가 쉬워 보이는데 한 번 풀어볼까?",
+    "location": "#기숙사",
+    "image": "https://i.ibb.co/85Vb3zF/33af390dcff3.jpg",
+    "conditional": false,
+    "getcon": [],
+    "getgad": [],
+    "lostcon": [],
+    "lostgad": [],
+    "revcon": [],
+    "revgad": [],
+    "choices": [
+        {
+            "text": "수학 문제를 보니 심장이 뛰고 설렌다. 수학 문제를 푼다.",
+            "link": "111006 111012 0",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        },
+        {
+            "text": "귀찮다.",
+            "link": "111006 111013 1",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        },
+        {
+            "text": "-",
+            "link": "111006 0 2",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        },
+        {
+            "text": "-",
+            "link": "111006 0 3",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        },
+        {
+            "text": "-",
+            "link": "111006 0 4",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        },
+        {
+            "text": "-",
+            "link": "111006 0 5",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        }
+    ]
+}

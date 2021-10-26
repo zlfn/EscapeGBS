@@ -1,0 +1,62 @@
+{
+    "comment": "`지구과학실험실에 내려왔는데 계단에 벌레가 가득하다. 난 벌레가 정말 싫다. 벌레가 있는 상태로는 계단을 지나가기 어려울 것 같다. 지구과학실험실2에 에프킬라가 있었던 것 같은데 철문으로 막혀있다. 어떻게 할까?@`@`",
+    "location": "#실험동 5층 계단",
+    "image": "https://i.ibb.co/zZ7cGdD/d2ec7184ad8f.jpg",
+    "conditional": false,
+    "getcon": [],
+    "getgad": [],
+    "lostcon": [],
+    "lostgad": [],
+    "revcon": [],
+    "revgad": [],
+    "choices": [
+        {
+            "text": "-벌레가 없어질 때까지 기다린다.",
+            "link": "211018 211019 0",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        },
+        {
+            "text": "-지구과학실험실1로 들어간다.",
+            "link": "211018 211020 1",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        },
+        {
+            "text": "-",
+            "link": "211018 0 2",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        },
+        {
+            "text": "-",
+            "link": "211018 0 3",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        },
+        {
+            "text": "-",
+            "link": "211018 0 4",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        },
+        {
+            "text": "-",
+            "link": "211018 0 5",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        }
+    ]
+}

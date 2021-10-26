@@ -1,0 +1,62 @@
+{
+    "comment": "`밖으로 나가기 위해 기숙사 계단을 내려왔다. 문을 열려 시도했으나 문이 열리지 않는다. 옆을 보니 잠금장치의 전원이 꺼져있다. 전원을 킬 방법이 없을까?",
+    "location": "#기숙사",
+    "image": "https://i.ibb.co/y4TgZ74/e5193a60f489.jpg",
+    "conditional": false,
+    "getcon": [],
+    "getgad": [],
+    "lostcon": [],
+    "lostgad": [],
+    "revcon": [],
+    "revgad": [],
+    "choices": [
+        {
+            "text": "자세히 살펴본다.",
+            "link": "111016 111024 0",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        },
+        {
+            "text": "사감실로 간다.",
+            "link": "111016 111029 1",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        },
+        {
+            "text": "다시 올라간다.",
+            "link": "111016 111031 2",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        },
+        {
+            "text": "-",
+            "link": "111016 0 3",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        },
+        {
+            "text": "-",
+            "link": "111016 0 4",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        },
+        {
+            "text": "-",
+            "link": "111016 0 5",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        }
+    ]
+}

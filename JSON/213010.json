@@ -1,0 +1,62 @@
+{
+    "comment": "`주기율표를 외워두면 좋을 것 같은 느낌이 든다. 주기율표를 이용해 비밀번호를 풀 수 있을 것 같다. 이제 다시 비밀번호를 풀어보자.@`@`",
+    "location": "#화학실",
+    "image": "https://i.ibb.co/RhLGfxK/dd7efb6e41a8.jpg",
+    "conditional": false,
+    "getcon": [],
+    "getgad": [],
+    "lostcon": [],
+    "lostgad": [],
+    "revcon": [],
+    "revgad": [],
+    "choices": [
+        {
+            "text": "-비밀번호를 다시 푼다.",
+            "link": "213010 213007 0",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        },
+        {
+            "text": "-포기하고 둘러본다.",
+            "link": "213010 213002 1",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        },
+        {
+            "text": "-",
+            "link": "213010 0 2",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        },
+        {
+            "text": "-",
+            "link": "213010 0 3",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        },
+        {
+            "text": "-",
+            "link": "213010 0 4",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        },
+        {
+            "text": "-",
+            "link": "213010 0 5",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        }
+    ]
+}

@@ -1,0 +1,62 @@
+{
+    "comment": "` 지구과학실험실1로 들어왔다. 내 기억으로는 컴퓨터를 이용해서 철문을 열 수 있는 것 같다. 컴퓨터는 암호로 잠겨있다. 어떻게 할까?@`@`",
+    "location": "#지구과학실험실1",
+    "image": "https://i.ibb.co/8jDYxHt/6d99a9279fc1.jpg",
+    "conditional": false,
+    "getcon": [],
+    "getgad": [],
+    "lostcon": [],
+    "lostgad": [],
+    "revcon": [],
+    "revgad": [],
+    "choices": [
+        {
+            "text": "-책상을 둘러본다.",
+            "link": "211020 211023 0",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        },
+        {
+            "text": "-지구과학실험실1을 둘러본다.",
+            "link": "211020 211024 1",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        },
+        {
+            "text": "-",
+            "link": "211020 0 2",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        },
+        {
+            "text": "-",
+            "link": "211020 0 3",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        },
+        {
+            "text": "-",
+            "link": "211020 0 4",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        },
+        {
+            "text": "-",
+            "link": "211020 0 5",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        }
+    ]
+}

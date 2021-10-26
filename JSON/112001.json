@@ -1,0 +1,62 @@
+{
+    "comment": "`주머니에 손을 넣어보니 천원짜리 한 장이 손에 잡힌다. 목이 마르니 자판기에서 음료수를 하나 마시고 가자. 어떤 음료수를 마실까?",
+    "location": "#자판기",
+    "image": "https://i.ibb.co/Hptj4kt/2144f85151db.jpg",
+    "conditional": false,
+    "getcon": [],
+    "getgad": [],
+    "lostcon": [],
+    "lostgad": [],
+    "revcon": [],
+    "revgad": [],
+    "choices": [
+        {
+            "text": "데자와",
+            "link": "112001 112002 0",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        },
+        {
+            "text": "마신다를 마신다.",
+            "link": "112001 112003 1",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        },
+        {
+            "text": "포카리",
+            "link": "112001 112004 2",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        },
+        {
+            "text": "마시지 않는다.",
+            "link": "112001 112005 3",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        },
+        {
+            "text": "-",
+            "link": "112001 0 4",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        },
+        {
+            "text": "-",
+            "link": "112001 0 5",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        }
+    ]
+}

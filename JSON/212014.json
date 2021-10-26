@@ -1,0 +1,62 @@
+{
+    "comment": "`'공작실 안에는 다양한 공작 재료들이 있다. 책상 위에 있는 나무 토막은 지렛대에서 받침대로 쓰기 적절해 보인다. 챙겨가서 발명품을 치우자.@@`@`",
+    "location": "#메이커실",
+    "image": "https://i.ibb.co/y02p2j6/9910a546157f.jpg",
+    "conditional": false,
+    "getcon": [],
+    "getgad": [],
+    "lostcon": [],
+    "lostgad": [],
+    "revcon": [],
+    "revgad": [],
+    "choices": [
+        {
+            "text": "-나무 토막을 챙긴다.",
+            "link": "212014 212015 0",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        },
+        {
+            "text": "-그냥 자물쇠나 확인하러 간다.",
+            "link": "212014 212004 1",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        },
+        {
+            "text": "-",
+            "link": "212014 0 2",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        },
+        {
+            "text": "-",
+            "link": "212014 0 3",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        },
+        {
+            "text": "-",
+            "link": "212014 0 4",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        },
+        {
+            "text": "-",
+            "link": "212014 0 5",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        }
+    ]
+}

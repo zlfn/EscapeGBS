@@ -1,0 +1,62 @@
+{
+    "comment": "`문제를 풀어보자.",
+    "location": "#화학실",
+    "image": "https://i.ibb.co/CHhgPQk/0feb5551387e.jpg",
+    "conditional": true,
+    "getcon": [],
+    "getgad": [],
+    "lostcon": [],
+    "lostgad": [],
+    "revcon": [],
+    "revgad": [],
+    "choices": [
+        {
+            "text": "-2021815",
+            "link": "213007 213008 0",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        },
+        {
+            "text": "-2026418",
+            "link": "213007 213011 1",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        },
+        {
+            "text": "-2021715",
+            "link": "213007 213008 2",
+            "conreq": false,
+            "gadreq": true,
+            "condition": [],
+            "gadget": []
+        },
+        {
+            "text": "-2026518",
+            "link": "213007 213008 3",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        },
+        {
+            "text": "-",
+            "link": "213007 0 4",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        },
+        {
+            "text": "-",
+            "link": "213007 0 5",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        }
+    ]
+}

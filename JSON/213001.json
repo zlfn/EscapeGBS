@@ -1,0 +1,62 @@
+{
+    "comment": "`실험동 3층에 도착했다. 2층으로 내려가려 했으나 계단에 이상한 액체가 뿌려져 있다. 아마도 염산 같아 보인다. R&E를 하던 친구들이 실수로 쏟은 듯 하다. 왠지 오늘따라 학교에 이상한 것들이 많은 것 같다. 기분 탓이려나. 어쨌든 2층으로 내려갈 방법을 찾아야 할 것 같다. 어떻게 할까?",
+    "location": "#실험동 3층 계단",
+    "image": "https://i.ibb.co/n6vVCYg/ba9f74d43389.jpg",
+    "conditional": false,
+    "getcon": [],
+    "getgad": [],
+    "lostcon": [],
+    "lostgad": [],
+    "revcon": [],
+    "revgad": [],
+    "choices": [
+        {
+            "text": "-본관으로 이동한다. ",
+            "link": "213001 215001 0",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        },
+        {
+            "text": "-화학실로 들어간다.",
+            "link": "213001 213002 1",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        },
+        {
+            "text": "-염산인지 핸드폰을 대 확인해 본다.",
+            "link": "213001 213001 2",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        },
+        {
+            "text": "-",
+            "link": "213001 0 3",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        },
+        {
+            "text": "-",
+            "link": "213001 0 4",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        },
+        {
+            "text": "-",
+            "link": "213001 0 5",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        }
+    ]
+}

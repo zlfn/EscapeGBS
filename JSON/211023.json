@@ -1,0 +1,62 @@
+{
+    "comment": "`선생님의 메모로 보이는 메모가 있다. 메모에는 “컴퓨터 비밀번호 : 문제의 정답”이라는 글과 함께 문제로 보이는 것이 쓰여 있다. @`@`",
+    "location": "#지구과학1실",
+    "image": "https://i.ibb.co/4mVYLR4/b0e06e6141c7.jpg",
+    "conditional": false,
+    "getcon": [],
+    "getgad": [],
+    "lostcon": [],
+    "lostgad": [],
+    "revcon": [],
+    "revgad": [],
+    "choices": [
+        {
+            "text": "-문제를 풀어보자.",
+            "link": "211023 211025 0",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        },
+        {
+            "text": "-무슨 소린지 모르겠다. 포기하자.",
+            "link": "211023 211026 1",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        },
+        {
+            "text": "-",
+            "link": "211023 0 2",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        },
+        {
+            "text": "-",
+            "link": "211023 0 3",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        },
+        {
+            "text": "-",
+            "link": "211023 0 4",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        },
+        {
+            "text": "-",
+            "link": "211023 0 5",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        }
+    ]
+}

@@ -1,0 +1,62 @@
+{
+    "comment": "`기숙사 문 밖으로 나가자 익숙한 풍경이 보인다. 정수기와 쓰레기통, 계단이 있다.",
+    "location": "#기숙사",
+    "image": "https://i.ibb.co/qr3wz1L/7cea8fcf56c3.jpg",
+    "conditional": false,
+    "getcon": [],
+    "getgad": [],
+    "lostcon": [],
+    "lostgad": [],
+    "revcon": [],
+    "revgad": [],
+    "choices": [
+        {
+            "text": "왠지 목이 마른 것 같다. 물을 마신다.",
+            "link": "111007 111014 0",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        },
+        {
+            "text": "쓰레기 통을 뒤진다.",
+            "link": "111007 111015 1",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        },
+        {
+            "text": "계단을 내려간다.",
+            "link": "111007 111025 2",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        },
+        {
+            "text": "기숙사에 다시 들어간다.",
+            "link": "111007 111013 3",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        },
+        {
+            "text": "-",
+            "link": "111007 0 4",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        },
+        {
+            "text": "-",
+            "link": "111007 0 5",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        }
+    ]
+}

@@ -1,0 +1,62 @@
+{
+    "comment": "`룸메이트의 노트를 한 장 넘겼다. 역시나 룸메이트의 글씨로 가득하다.@`\"이제 전선만 있으면 건전지를 충전 할 수 있을 것이다.@`마침 전선을 구해왔으니 집에 이걸 가져가서 실험해봐야지.\"@`룸메이트가 연구 준비물을 깜박하고 집에 가져가지 않은 듯 하다. 알려주어야 할까?",
+    "location": "#기숙사",
+    "image": "https://i.ibb.co/DCK4xHj/e82462e7c999.jpg",
+    "conditional": false,
+    "getcon": [],
+    "getgad": [],
+    "lostcon": [],
+    "lostgad": [],
+    "revcon": [],
+    "revgad": [],
+    "choices": [
+        {
+            "text": "전선?",
+            "link": "111020 111027 0",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        },
+        {
+            "text": "다음 페이지를 본다.",
+            "link": "111020 111038 1",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        },
+        {
+            "text": "-",
+            "link": "111020 0 2",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        },
+        {
+            "text": "-",
+            "link": "111020 0 3",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        },
+        {
+            "text": "-",
+            "link": "111020 0 4",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        },
+        {
+            "text": "-",
+            "link": "111020 0 5",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        }
+    ]
+}

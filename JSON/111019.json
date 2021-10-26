@@ -1,0 +1,74 @@
+{
+    "comment": "`건전지를 끼웠다. 건전지를 끼워도 충전이 되지 않는다.",
+    "location": "#기숙사",
+    "image": "https://i.ibb.co/gmdk0y1/47288669909a.jpg",
+    "conditional": true,
+    "getcon": [
+        8
+    ],
+    "getgad": [
+        11
+    ],
+    "lostcon": [
+        18
+    ],
+    "lostgad": [
+        1
+    ],
+    "revcon": [],
+    "revgad": [],
+    "choices": [
+        {
+            "text": "전선을 감아본다.",
+            "link": "111019 111026 0",
+            "conreq": true,
+            "gadreq": true,
+            "condition": [
+                17
+            ],
+            "gadget": [
+                3
+            ]
+        },
+        {
+            "text": "다음",
+            "link": "111019 111013 1",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        },
+        {
+            "text": "-",
+            "link": "111019 0 2",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        },
+        {
+            "text": "-",
+            "link": "111019 0 3",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        },
+        {
+            "text": "-",
+            "link": "111019 0 4",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        },
+        {
+            "text": "-",
+            "link": "111019 0 5",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        }
+    ]
+}

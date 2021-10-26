@@ -1,0 +1,62 @@
+{
+    "comment": "`망원경 조립순서에 맞게 정렬하시오.@`1. 파인더 달기@`2. 가대 설치@`3. 균형 맞추기@`4. 균형추 달기@`5. 극축 맞추기@`6. 접안렌즈 달기@`7. 삼각대 설치@`8. 파인더 정렬@`9. 경통 올리기",
+    "location": "#하나마루",
+    "image": "https://i.ibb.co/dW7Hf4s/e3bd36bd5b2b.jpg",
+    "conditional": false,
+    "getcon": [],
+    "getgad": [],
+    "lostcon": [],
+    "lostgad": [],
+    "revcon": [],
+    "revgad": [],
+    "choices": [
+        {
+            "text": "8-2-6-7-9-5-1-3-4",
+            "link": "211011 211014 0",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        },
+        {
+            "text": "8-4-5-6-7-1-3-9-2",
+            "link": "211011 211014 1",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        },
+        {
+            "text": "5-8-4-3-1-2-7-6-9",
+            "link": "211011 211014 2",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        },
+        {
+            "text": "2-7-4-9-1-3-6-8-5",
+            "link": "211011 211014 3",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        },
+        {
+            "text": "7-2-9-4-1-6-8-3-5",
+            "link": "211011 211014 4",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        },
+        {
+            "text": "7-2-4-9-1-6-3-8-5",
+            "link": "211011 211013 5",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        }
+    ]
+}

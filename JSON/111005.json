@@ -1,0 +1,62 @@
+{
+    "comment": "`지금까지 궁금해했던 룸메이트의 연구 준비물들을 몰래 볼 수 있는 기회다. 매번 연구 준비물에 관해 물어도 룸메이트는 나에게 연구 준비물에 관해선 하나도 알려주는 일이 없었다. 이 기회에 룸메이트의 연구 준비물을 확인해보자.",
+    "location": "#기숙사",
+    "image": "https://i.ibb.co/k07MtDP/7b8b7dba9855.jpg",
+    "conditional": false,
+    "getcon": [],
+    "getgad": [],
+    "lostcon": [],
+    "lostgad": [],
+    "revcon": [],
+    "revgad": [],
+    "choices": [
+        {
+            "text": "알 수 없는 기계장치를 확인한다.",
+            "link": "111005 111009 0",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        },
+        {
+            "text": "룸메이트의 노트를 확인한다.",
+            "link": "111005 111010 1",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        },
+        {
+            "text": "일반물리학책을 확인한다.",
+            "link": "111005 111011 2",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        },
+        {
+            "text": "공구함을 살펴본다.",
+            "link": "111005 111033 3",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        },
+        {
+            "text": "-",
+            "link": "111005 0 4",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        },
+        {
+            "text": "-",
+            "link": "111005 0 5",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        }
+    ]
+}

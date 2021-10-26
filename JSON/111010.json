@@ -1,0 +1,62 @@
+{
+    "comment": "`룸메이트의 노트를 펼쳐 보았다. 룸메이트 특유의 흘겨쓴 글씨체로 빼곡하게 글이 채워져 있다.@`“전자기유도를 통해 운동에너지를 전기에너지로 바꾸는 실험을 하는 중이다.@`건전지를 충전 해 볼 계획이다.”@`전자기유도...수업 시간에 배웠던 것 같은데 잘 기억이 안 난다.",
+    "location": "#기숙사",
+    "image": "https://i.ibb.co/gg8QP56/01e479e10077.jpg",
+    "conditional": false,
+    "getcon": [],
+    "getgad": [],
+    "lostcon": [],
+    "lostgad": [],
+    "revcon": [],
+    "revgad": [],
+    "choices": [
+        {
+            "text": "다음페이지를 본다.",
+            "link": "111010 111020 0",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        },
+        {
+            "text": "-",
+            "link": "111010 0 1",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        },
+        {
+            "text": "-",
+            "link": "111010 0 2",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        },
+        {
+            "text": "-",
+            "link": "111010 0 3",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        },
+        {
+            "text": "-",
+            "link": "111010 0 4",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        },
+        {
+            "text": "-",
+            "link": "111010 0 5",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        }
+    ]
+}

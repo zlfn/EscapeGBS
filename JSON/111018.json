@@ -1,0 +1,74 @@
+{
+    "comment": "`전선을 감자, 조금은 모양이 나온다.",
+    "location": "#기숙사",
+    "image": "https://i.ibb.co/W3KnPyY/4fc613126ee2.jpg",
+    "conditional": true,
+    "getcon": [
+        7
+    ],
+    "getgad": [
+        13
+    ],
+    "lostcon": [
+        17
+    ],
+    "lostgad": [
+        3
+    ],
+    "revcon": [],
+    "revgad": [],
+    "choices": [
+        {
+            "text": "건전지를 끼운다.",
+            "link": "111018 111026 0",
+            "conreq": false,
+            "gadreq": true,
+            "condition": [],
+            "gadget": []
+        },
+        {
+            "text": "다음",
+            "link": "111018 111013 1",
+            "conreq": true,
+            "gadreq": false,
+            "condition": [
+                18
+            ],
+            "gadget": []
+        },
+        {
+            "text": "다음",
+            "link": "111018 111026 2",
+            "conreq": true,
+            "gadreq": false,
+            "condition": [
+                8
+            ],
+            "gadget": []
+        },
+        {
+            "text": "-",
+            "link": "111018 0 3",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        },
+        {
+            "text": "-",
+            "link": "111018 0 4",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        },
+        {
+            "text": "-",
+            "link": "111018 0 5",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        }
+    ]
+}

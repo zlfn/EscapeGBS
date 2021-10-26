@@ -1,0 +1,62 @@
+{
+    "comment": "`당신은 태양 속에서 태양이의 얼굴을보았습니다.@`태양이 너무 밝아서인지 태양이의 얼굴이 너무 아찔해서인지는 모르겠지만@`더 이상 앞이 보이지 않습니다.@`눈이 먼 것 같습니다.@`선생님이 망원경으로 태양을 보지 말라는데는 다 이유가 있는 법입니다.@`앞으로는 선생님 말씀을 잘 따르시기 바랍니다.@`@`",
+    "location": "#DEATH",
+    "image": "https://i.ibb.co/4P7Gr7N/83a6138ee435.jpg",
+    "conditional": false,
+    "getcon": [],
+    "getgad": [],
+    "lostcon": [],
+    "lostgad": [],
+    "revcon": [],
+    "revgad": [],
+    "choices": [
+        {
+            "text": "-다시하기",
+            "link": "211036 -1 0",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        },
+        {
+            "text": "-",
+            "link": "211036 0 1",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        },
+        {
+            "text": "-",
+            "link": "211036 0 2",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        },
+        {
+            "text": "-",
+            "link": "211036 0 3",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        },
+        {
+            "text": "-",
+            "link": "211036 0 4",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        },
+        {
+            "text": "-",
+            "link": "211036 0 5",
+            "conreq": false,
+            "gadreq": false,
+            "condition": [],
+            "gadget": []
+        }
+    ]
+}
