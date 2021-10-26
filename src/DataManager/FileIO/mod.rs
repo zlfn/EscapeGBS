@@ -108,6 +108,7 @@ pub fn BuildHTML_nostate(to:i32) -> Result<content::Html<String>,io::Error>
     let mut s = format!(
         "<!DOCTYPE HTML>\n\
         <head>\n\
+            <title>Escape GBS</title>\n\
             <style>\n\
             @import url(//fonts.googleapis.com/earlyaccess/jejumyeongjo.css);\n\
             @font-face {{
@@ -187,7 +188,7 @@ pub fn BuildHTML_nostate(to:i32) -> Result<content::Html<String>,io::Error>
                 width:100%;
                 margin-top:200px;
                 background-color: white;
-                height:150px;
+                height:200px;
                 z-index:2;
             }}\n\
             body{{
@@ -504,6 +505,7 @@ pub fn BuildHTML(from:i32, to:i32, state:&GameState) ->Result<content::Html<Stri
     let mut s = format!(
         "<!DOCTYPE HTML>\n\
         <head>\n\
+            <title>Escape GBS</title>\n\
             <style>\n\
             @import url(//fonts.googleapis.com/earlyaccess/jejumyeongjo.css);\n\
             @font-face {{
@@ -583,7 +585,7 @@ pub fn BuildHTML(from:i32, to:i32, state:&GameState) ->Result<content::Html<Stri
                 width:100%;
                 margin-top:200px;
                 background-color: white;
-                height:150px;
+                height:200px;
                 z-index:2;
             }}\n\
             body{{
