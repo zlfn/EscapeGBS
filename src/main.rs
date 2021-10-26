@@ -79,7 +79,7 @@ fn game_post(selection:String, mut cookies:Cookies) -> content::Html<String> {
             return BuildHTML_nostate(-3).unwrap();
         }
         let mut state = state.unwrap();
-        return ReadHTMLFile("/HTML/re_main.html").unwrap();
+        return ReadHTMLFile("HTML/re_main.html").unwrap();
     }
 
 
