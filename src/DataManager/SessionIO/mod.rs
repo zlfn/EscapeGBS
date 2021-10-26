@@ -28,7 +28,7 @@ pub fn GenerateSession(tt: i64) -> Result<u32,io::Error>
 
     let mut state = GameState
 {
-    page:1,
+    page:111001,
     condition: vec![false;20],
     gadget: vec![false;20]
 };

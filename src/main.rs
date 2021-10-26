@@ -38,11 +38,51 @@ fn game(mut cookies:Cookies) -> content::Html<String> {
     let session = session.unwrap();
 
     let mut state = ReadSession(session);
-    return DataManager::FileIO::BuildHTML(0,1,&state.unwrap()).unwrap();
+    return DataManager::FileIO::BuildHTML(0,111001,&state.unwrap()).unwrap();
 }
 
 #[post("/game",data="<selection>")]
 fn game_post(selection:String, mut cookies:Cookies) -> content::Html<String> {
+
+    let gotos = selection.replace("selection=","").replace("+"," ");
+    println!("{:?}",gotos);
+    let goto: Vec<i32> = gotos.split_whitespace()
+        .map(|x| x.parse().unwrap())
+        .collect();
+
+    if(goto[1]==-1){
+        cookies.remove(Cookie::named("session"));
+        cookies.add(Cookie::new("session",GenerateSession(600).unwrap().to_string()));
+        let session = cookies.get("session");
+        if let Some(T) = session{} else{return BuildHTML_nostate(-3).unwrap();}
+        let session = session.unwrap().value().parse::<u32>();
+        if let Err(E) = session {return BuildHTML_nostate(-3).unwrap();}
+        let session = session.unwrap();
+        let mut state = ReadSession(session);
+        if let Err(T) = state {
+            return BuildHTML_nostate(-3).unwrap();
+        }
+        let mut state = state.unwrap();
+        return BuildHTML(0,111001,&state).unwrap();
+    }
+
+    if(goto[1]==-4){
+        cookies.remove(Cookie::named("session"));
+        cookies.add(Cookie::new("session",GenerateSession(600).unwrap().to_string()));
+        let session = cookies.get("session");
+        if let Some(T) = session{} else{return BuildHTML_nostate(-3).unwrap();}
+        let session = session.unwrap().value().parse::<u32>();
+        if let Err(E) = session {return BuildHTML_nostate(-3).unwrap();}
+        let session = session.unwrap();
+        let mut state = ReadSession(session);
+        if let Err(T) = state {
+            return BuildHTML_nostate(-3).unwrap();
+        }
+        let mut state = state.unwrap();
+        return ReadHTMLFile("/HTML/re_main.html").unwrap();
+    }
+
+
     let session = cookies.get("session");
     if let Some(T) = session{} else{return BuildHTML_nostate(-3).unwrap();}
     let session = session.unwrap().value().parse::<u32>();
@@ -55,30 +95,22 @@ fn game_post(selection:String, mut cookies:Cookies) -> content::Html<String> {
     }
     let mut state = state.unwrap();
 
-    println!("page:{}",state.page);
-    let gotos = selection.replace("selection=","").replace("+"," ");
-    println!("{:?}",gotos);
-    let goto: Vec<i32> = gotos.split_whitespace()
-        .map(|x| x.parse().unwrap())
-        .collect();
-
-    println!("current: {}",goto[0]);
-    println!("selection: {}",goto[1]);
-
-    if(goto[1]==-1){cookies.remove(Cookie::named("session"));}
+    println!("{:?}",goto);
     return select(goto,session,state);
-
 }
 
 fn check(goto:Vec<i32>, session: u32, mut state: &mut GameState) -> content::Html<String>
 {
+    println!("b {} {}",goto[0],state.page);
     let mut json_path = format!("JSON/{}.json", goto[0]);
     let mut file = &ReadFile(&json_path).unwrap()[..];
     let mut data: JsonFormat = serde_json::from_str(file).unwrap();
 
+    println!("{} {} {}", goto[0],goto[1],goto[2]);
 
     if goto[0]!=state.page
     {
+        println!("Error");
         return BuildHTML_nostate(-3).unwrap();
     }
     if data.choices[usize::try_from(goto[2]).unwrap()].conreq==true
@@ -101,6 +133,7 @@ fn check(goto:Vec<i32>, session: u32, mut state: &mut GameState) -> content::Htm
             }
         }
     }
+    state.page = goto[1];
     GetState(goto[1],state);
     WriteSession(session,state);
     return BuildHTML(i32::try_from(goto[0]).unwrap(),i32::try_from(goto[1]).unwrap(),state).unwrap();
@@ -108,8 +141,9 @@ fn check(goto:Vec<i32>, session: u32, mut state: &mut GameState) -> content::Htm
 
 fn select(goto:Vec<i32>,session:u32, mut state: GameState) -> content::Html<String>
 {
-    if goto[1]==0 {return select(vec![goto[0],goto[0]],session,state);}
-    else {match goto[0]
+    println!("a {} {}", goto[0],goto[1]);
+    if goto[1]==0 {println!("h");return check(vec![goto[0],goto[0],0],session,&mut state);}
+    else { match goto[0]
     {
         -3=>
             {
@@ -128,19 +162,15 @@ fn select(goto:Vec<i32>,session:u32, mut state: GameState) -> content::Html<Stri
                     _=>return BuildHTML(-2,-2,&state).unwrap()
                 }
             }
-        1=>
+        0=>
             {
-                return check(goto,session, &mut state);
+                match goto[1]
+                {
+                    -1=> return BuildHTML(0, 111001,&state).unwrap(),
+                    _=> return BuildHTML(0, -2, &state).unwrap()
+                }
             }
-        2=>
-            {
-                return check(goto, session, &mut state);
-            }
-        3=>
-            {
-                return check(goto, session, &mut state);
-            }
-        _=>return BuildHTML_nostate(-3).unwrap()
+        _=>return check(goto, session, &mut state)
     }}
 }
 

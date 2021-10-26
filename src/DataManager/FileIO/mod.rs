@@ -90,6 +90,13 @@ pub fn ReadJSFile(path: &str) -> Result<content::JavaScript<String>, io::Error>
     return Ok(content::JavaScript(s));
 }
 
+///현재 상태가 주어질수 없는 상태에서 JSON을 HTML로 빌드합니다.
+///
+/// # Example
+/// ```
+/// return DataManager::FileIO::BuildHTML_nostate(-3);
+/// ```
+///
 pub fn BuildHTML_nostate(to:i32) -> Result<content::Html<String>,io::Error>
 {
     let mut json_path = format!("JSON/{}.json", to);
@@ -145,7 +152,7 @@ pub fn BuildHTML_nostate(to:i32) -> Result<content::Html<String>,io::Error>
                 display:none;
             }}\n\
             .mimage {{
-                width:80%;
+                width:90%;
                 text-align:center;
                 display: block;
                 margin-left:auto;
@@ -203,24 +210,23 @@ pub fn BuildHTML_nostate(to:i32) -> Result<content::Html<String>,io::Error>
                 overflow-x:hidden;
             }}\n\
             .mimage_box {{
-                width:50%;
                 height:100%;
+                width:50%;
                 overflow:hidden;
                 float:left;
-                margin-top:70px;
                 margin-bottom:20px;
                 padding-left:5px;
                 z-index:2;
             }}\n\
             .mimage {{
                 position:relative;
-                margin:auto;
                 width:100%;
-                height:auto;
+                height:100%;
                 object-fit:none;
-                display:inline;
                 transform: translate(50, 50);
                 z-index:2;
+                margin-bottom:auto;
+                margin-top:auto;
             }}\n\
             .typing-text{{
                 overflow-y:scroll;
@@ -400,6 +406,13 @@ pub fn BuildHTML_nostate(to:i32) -> Result<content::Html<String>,io::Error>
     return Ok(content::Html(s));
 }
 
+///GameState의 상태변환과 가젯 획득을 제어합니다.
+///
+/// # Example
+/// ```
+/// return DataManager::FileIO::GetState(3,state).unwrap();
+/// ```
+///
 pub fn GetState(to:i32,mut state:&mut GameState)
 {
     state.page = to;
@@ -433,6 +446,12 @@ pub fn GetState(to:i32,mut state:&mut GameState)
         state.gadget[usize::try_from(*a).unwrap()] = !state.gadget[usize::try_from(*a).unwrap()]
     }
 }
+
+///JSON에서 HTML을 빌드합니다.
+///
+/// # Example
+/// ```
+/// return DataManager::FileIO::BuildHTML(3,4,state).unwrap();
 pub fn BuildHTML(from:i32, to:i32, state:&GameState) ->Result<content::Html<String>,io::Error>
 {
     let mut json_path = format!("JSON/{}.json", to);
@@ -449,7 +468,7 @@ pub fn BuildHTML(from:i32, to:i32, state:&GameState) ->Result<content::Html<Stri
                 if !state.condition[*i]
                 {
                     c.text = String::from("-");
-                    c.link = String::from(format!("{} 0",from));
+                    c.link = String::from(format!("{} 0 0",from));
                 }
             }
         }
@@ -460,7 +479,7 @@ pub fn BuildHTML(from:i32, to:i32, state:&GameState) ->Result<content::Html<Stri
                 if !state.gadget[*i]
                 {
                     c.text = String::from("-");
-                    c.link = String::from(format!("{} 0",from));
+                    c.link = String::from(format!("{} 0 0",from));
                 }
             }
         }
@@ -468,11 +487,15 @@ pub fn BuildHTML(from:i32, to:i32, state:&GameState) ->Result<content::Html<Stri
 
     if data.conditional==true
     {
-        for i in (1..5)
+        for k in (1..5)
         {
-            if data.choices[i-1].text==String::from("-")
+            for i in (1..5)
             {
-                data.choices.swap(i-1,i);
+                if data.choices[i-1].text==String::from("-")
+                {
+                    data.choices.swap(i-1,i);
+                    println!("sorted");
+                }
             }
         }
     }
@@ -583,8 +606,8 @@ pub fn BuildHTML(from:i32, to:i32, state:&GameState) ->Result<content::Html<Stri
                 overflow-x:hidden;
             }}\n\
             .mimage_box {{
-                width:50%;
-                height:100%;
+                width:45%;
+                height:auto;
                 overflow:hidden;
                 float:left;
                 margin-top:70px;
@@ -596,7 +619,7 @@ pub fn BuildHTML(from:i32, to:i32, state:&GameState) ->Result<content::Html<Stri
                 position:relative;
                 margin:auto;
                 width:100%;
-                height:auto;
+                height:100%;
                 object-fit:none;
                 display:inline;
                 transform: translate(50, 50);
